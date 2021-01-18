@@ -593,16 +593,15 @@ margin: 0;
   }
   
   .task-buddy-content{
-    height: 30px;
-    margin: 200px auto;
+    margin: 200px 2em;
     position: relative;
   }
   
   .task-buddy-text {
     background: #BEE1D6;
-    max-width: 65%;
+    max-width: 85%;
+    min-width: auto;
     display: block;
-    margin: 0 2em;
     word-wrap: break-word;
     padding-left: 1em;
   }
@@ -623,7 +622,14 @@ margin: 0;
   @media (max-width: 1130px) {
     .task-buddy-floating-text {
       top: 3em;
-      margin-left: 3.5em;
+      right: 1.5em;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .task-buddy-floating-text {
+      right: 2em;
+      /* margin-left: 3.5em; */
     }
   }
   
