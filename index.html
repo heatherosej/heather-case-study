@@ -12,48 +12,27 @@
 </head>
 
 <body class="flex">
-  <!-- HEADER -->
+  <!-- Header -->
   <header>
-    <div class="logo"></div>
-    <div class="main-links"></div>
-    <div class="nav-links"></div>
-  </header>
-
-  <section class="top">
-    <!--Navcontainer-->
-    <header>
-      <nav id="all-nav">
-        <div class="Logo"> <a href="index.html"> <img src="Images/homelogo.png" id="logo" alt="HJ logo"> </a>
-        </div>
-        <!--logo close-->
-
-        <div class="nav">
-          <div class="topnav-left">
-            <a class="leftLinks" href="about">Who Am I?</a>
-            <a class="leftLinks" href="portfolio">Portfolio</da>
-          </div>
-          <!--topnav-left close-->
-          <div class="topnav-right">
-            <a class="resume" href="https://www.dropbox.com/s/krc1izyw1yfvd9n/HeatherJansenResume.20.10.20.pdf?dl=0"
-              id="resume">Resumé</a>
-            <a class="RightLinks" href="https://www.linkedin.com/in/heather-jansen/" id="linked"><i
-                class="fab fa-linkedin-in"></i></a>
-            <a class="RightLinks" href="https://www.instagram.com/fierce_flawless/" id="insta"><i
-                class="fab fa-instagram"></i></a>
-            <a class="RightLinks" href="mailto:h@hrj.design?subject=Let's Make Something Together" id="email"><i
-                class="far fa-envelope"></i></a>
-            <a class="RightLinks" href="tel:2023021953" id="phone"><i class="fas fa-phone"></i> </a>
-          </div>
-          <!--topnav right close-->
-        </div>
-        <!--nav close-->
-        <div class="hamburger">
-          <a class="menu" id="menu" href="#"><i class="fas fa-bars"></i></i></a></li>
-        </div>
-        <!--hamburger close-->
+    <div class="web-layout">
+      <a class="logo" href="index.html">
+        <img src="Images/homelogo.png" id="logo-img" alt="HJ logo">
+      </a>
+      <nav class="navbar">
+        <ul class="main-links">
+          <li><a href="about">Who Am I?</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+        </ul>
+        <ul class="contact-links">
+          <li><a href="https://www.dropbox.com/s/krc1izyw1yfvd9n/HeatherJansenResume.20.10.20.pdf?dl=0" target="_blank" id="resume">Resumé</a></li>
+          <li><a href="https://www.linkedin.com/in/heather-jansen/" id="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.instagram.com/fierce_flawless/" id="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="mailto:h@hrj.design?subject=Let's Make Something Together" id="email"><i class="far fa-envelope"></i></a></li>
+          <li><a href="tel:2023021953" id="phone"><i class="fas fa-phone"></i> </a></li>
+        </ul>
       </nav>
-    </header>
-  </section>
+    </div>
+  </header>
 
   <section class="herocontent">
     <!--hero-->
@@ -191,28 +170,27 @@
     </div>
 
   </section>
-  <div class="morestuff"> <a href="portfolio">more fun stuff thataway ------></a></div>
 
-  <section class="xy" id="footer">
-    <!--footer-->
-    <div class="footer">
-      <div Class="leftfooter">
-        <a class="lf" id="test"
-          href="https://www.dropbox.com/s/krc1izyw1yfvd9n/HeatherJansenResume.20.10.20.pdf?dl=0">Resumé</a>
-        <a class="lf" href="mailto:h@hrj.design?subject=Let's Make Something Together" id="email2"><i
-            class="far fa-envelope"></i></a>
-        <a class="lf" href="tel:2023021953" id="phone2"><i class="fas fa-phone"></i> </a>
-      </div> <!-- footer close -->
-      <div class="copyright"> ©2020 Heather Jansen. Made with 🖤 and 🎵. </div>
-    </div><!-- xy close -->
+  <!-- Portfolio Link -->
+  <div class="morestuff"> 
+    <a href="portfolio">more fun stuff thataway ------></a>
+  </div>
 
-
-  </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  <!-- Footer -->
+  <footer>
+    <ul class="f-contact-links">
+      <li><a href="https://www.dropbox.com/s/krc1izyw1yfvd9n/HeatherJansenResume.20.10.20.pdf?dl=0" target="_blank">Resumé</a></li>
+      <li><a href="mailto:h@hrj.design?subject=Let's Make Something Together"><i class="far fa-envelope"></i></a></li>
+      <li><a href="tel:2023021953"><i class="fas fa-phone"></i></a></li>
+    </ul>
+    <span class="copyright">©2020 Heather Jansen. Made with 🖤 and 🎵.</span>
+  </footer>
+  <!--  -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
   <script src="./Javascript/script.js"></script>
-
 </body>
-
 </html>
