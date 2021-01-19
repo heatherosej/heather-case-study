@@ -13,7 +13,7 @@
         <div class="nav">
           <div class="topnav-left">
             <a class="leftLinks" href="about">Who Am I?</a>
-            <a class="leftLinks" href="portfolio">Portfolio</da>
+            <a class="leftLinks" href="portfolio">Portfolio</a>
           </div>
           <!--topnav-left close-->
           <div class="topnav-right">
