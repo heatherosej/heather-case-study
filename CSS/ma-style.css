@@ -5,6 +5,7 @@
 
 .web-layout {
     border: 2px solid lightgreen;
+    width: 100%;
     max-width: 650px;
     /* max-width: 1440px; */
     margin:  0 auto;
@@ -16,7 +17,10 @@
 
 /* Header */
 header {
-    background-color: black;
+    min-height: 140px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -24,7 +28,6 @@ header {
 header .web-layout {
     display: flex;
     flex-flow: wrap;
-    /* align-items: center; */
 }
 .logos {
     display: inline-block;
@@ -41,9 +44,17 @@ header .web-layout {
     display: flex;
     justify-content: space-between;
 }
-.navbar a { color: white; }
+.navbar a { color: #ffffff; }
+.navbar a:hover { color: #BEE1D6; }
+.navbar a:not(i) { 
+    font-family: ballinger-mono, sans-serif; 
+    font-size: 15px;
+    /* font-weight: 300; */
+}
+.navbar i { font-size: 25px; }
 .main-links,
-.h-contact-links {
+.h-contact-links 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,13 +63,15 @@ header .web-layout {
 .h-contact-links li:not(:first-child) { margin-left: 1em; }
 .h-contact-links a:not(#resume) { font-size: 25px; }
 .menu-btn {
-    color: white;
-    font-size: 25px;
+    color: #BEE1D6;
+    /* font-size: 25px; */
+    font-size: 36px;
     /* display: flex; */
     align-items: center;
     justify-content: center;
     display: none;
 }
+.menu-btn:hover { color: #ffffff; }
 
 @media only screen and (max-width: 650px) {
     header .web-layout { justify-content: space-between; }
@@ -73,9 +86,7 @@ header .web-layout {
     }
     .main-links { flex-flow: column; }
     .main-links li:not(:last-child) { margin: 0 0 1em 0; }
-    .h-contact-links {
-        flex-flow: wrap;
-    }
+    .h-contact-links { flex-flow: wrap; }
     .h-contact-links li:first-child {
         flex: 1 1 100%;
         text-align: center;
@@ -88,6 +99,7 @@ header .web-layout {
 /* Footer */
 footer {
   background-color:#FCB140;
+  min-height: 62px;
 }
 footer .web-layout {
     display: flex;
@@ -95,16 +107,16 @@ footer .web-layout {
     align-items: center;
     justify-content: space-between;
 }
-.f-contact-links {
-    display: flex;
+.f-contact-links { display: flex; }
+.f-contact-links li:not(:last-child) { margin-right: 1em; }
+.f-contact-links a { 
+    color: #000000; 
+    font-size: 17px;
+    font-weight: 500;
 }
-.f-contact-links li:not(:last-child) {
-    margin-right: 1em;
-}
-.f-contact-links a {
-    color: black;
-}
+.f-contact-links a:hover { color: #ffffff; }
 .copyrights { 
+    font-size: 13px;
     display: flex;
     flex-flow: wrap;
     margin: 1em 0; 
