@@ -593,7 +593,7 @@ margin: 0;
   }
   
   .task-buddy-content{
-    margin: 200px 2em;
+    margin: 200px 3em;
     position: relative;
   }
   
@@ -628,8 +628,7 @@ margin: 0;
 
   @media (max-width: 460px) {
     .task-buddy-floating-text {
-      right: 2em;
-      /* margin-left: 3.5em; */
+      right: 1em;
     }
   }
   
@@ -638,3 +637,78 @@ margin: 0;
   The Idea / The Details
   ========================
   */
+
+  .theIdea-section-content {
+    display: flex;
+    margin: 3em;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .the-idea {
+    width: 64%;
+  }
+
+  .the-idea p {
+    padding: 0 1.3em;
+    line-height: 23.46px;
+    font-weight: 400;
+    margin-bottom: 1.7em;
+    font-size: 18px;
+    /* font-size: 20px; looking too big */
+  }
+
+  .the-details .task-buddy-h1 {
+    margin-left: -.5em;
+    margin-bottom: .5em;
+  }
+
+  .the-details {
+    min-width: 30%;
+    padding-left: 3em;
+    border-left: 1px solid #000;
+  }
+
+  .team {
+    display: flex;
+    gap: 1em;
+  }
+
+  .the-details span {
+    display: block;
+    font-weight: 400;
+  }
+
+  .the-details .theDetails-heading, .theDetails-title {
+    font-size: 22px;
+    font-family: 'OCR_A_Std_Regular';
+  }
+
+  .the-details .theDetails-description {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .info-bar {
+    width: 95%;
+    background: #BEE1D6;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    box-shadow: 10px 10px 0 #FABD3F;
+  }
+
+
+  .info-bar p {
+    /* font-size: 29.26px; */
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'TradeGothicLTStd-Extended';
+    line-height: 28px;
+  }
+
+  .info-bar span {
+    display: block;
+    margin-top: -1em;
+    font-size: 20px;
+    font-weight: 400;
+  }
