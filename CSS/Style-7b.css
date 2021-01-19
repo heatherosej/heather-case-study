@@ -12,6 +12,10 @@
     src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
   }
 
+@root {
+  /* --TradeGothicLTStd */
+}
+
 html, body{
   margin: 0;
   padding: 0;
@@ -614,9 +618,9 @@ margin: 0;
     font-size: 20px;
     background: #fff;
     padding: 1em 2em;
-    border: 7px solid #EB9893;
+    border: 10px solid #EB9893;
     font-family: OCR_A_Std_Regular;
-    box-shadow: 0 0 0px 2px #444444, inset 0 0 0px 2px #444444;
+    box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   }
   
   @media (max-width: 1130px) {
@@ -638,24 +642,37 @@ margin: 0;
   ========================
   */
 
+  .container {
+    margin: 2em;
+  }
+
+  .container-heading {
+    
+  }
+
+  .container-child {
+    padding: 0 1.3em;
+  }
+
+  .max-width-1130 {
+      max-width: 85%;
+  }
+
+  .container-p {
+    line-height: 23.46px;
+    font-weight: 400;
+    margin-bottom: 1.7em;
+    font-size: 18px;
+  }
+
   .theIdea-section-content {
     display: flex;
-    margin: 3em;
     justify-content: space-between;
     gap: 3em;
   }
 
   .the-idea {
     width: 64%;
-  }
-
-  .the-idea p {
-    padding: 0 1.3em;
-    line-height: 23.46px;
-    font-weight: 400;
-    margin-bottom: 1.7em;
-    font-size: 18px;
-    /* font-size: 20px; looking too big */
   }
 
   .the-details .task-buddy-h1 {
@@ -690,7 +707,7 @@ margin: 0;
   }
 
   .info-bar {
-    width: 95%;
+    width: 93%;
     background: #BEE1D6;
     margin: 0 auto;
     margin-bottom: 3em;
@@ -702,7 +719,7 @@ margin: 0;
     /* font-size: 29.26px; */
     font-size: 24px;
     font-weight: 600;
-    font-family: 'TradeGothicLTStd-Extended';
+    font-family: 'TradeGothicLTStd-BoldExt';
     line-height: 28px;
   }
 
@@ -711,4 +728,53 @@ margin: 0;
     margin-top: -1em;
     font-size: 20px;
     font-weight: 400;
+  }
+
+  /*
+  ========================
+  The Idea / The Details
+  ========================
+  */
+
+  .the-problem-content {
+    position: relative;
+  }
+
+  .the-problem-description {
+    font-family: 'TradeGothicLTStd-Extended';
+    font-size: 24px;
+  }
+
+  .hypothesis-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hypothesis-section .orange-box {
+    border: 10px solid #EB9893;
+    box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
+    margin-top: 2.5em;
+    max-width: 485px;
+    align-self: flex-start;
+  }
+
+  .container-h2 {
+    margin-left: -1em;
+  }
+
+  .floating-inner {
+    padding: 1em 1.5em;
+    line-height: 30px;
+    font-family: OCR_A_Std_Regular;
+  }
+
+  .short-p {
+    max-width: 90%;
+    margin-bottom: 8em;
+    margin-right: 1em;
+  }
+
+  .info-icon {
+    font-size: 3rem;
+    line-height: 0px;
   }
