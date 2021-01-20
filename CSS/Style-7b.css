@@ -659,10 +659,11 @@ margin: 0;
   }
 
   .container-p {
-    line-height: 23.46px;
-    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 25.6px;
+    font-weight: 300;
     margin-bottom: 1.7em;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .theIdea-section-content {
@@ -803,12 +804,16 @@ margin: 0;
     object-fit: contain;
   }
 
-  .open-btn, .close-btn {
+  .open-btn img, .close-btn img{
     border: none;
+    background: transparent;
+    width: 40px;
     margin-left: .5em;
-    font-size: 1em;
-    background: none;
-    color: #BEE1D6;
+    margin-bottom: -5px;
+  }
+
+  .close-btn img{
+    margin-bottom: 10px;
   }
 
   .identifying-user h2{
