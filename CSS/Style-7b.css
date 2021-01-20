@@ -732,7 +732,7 @@ margin: 0;
 
   /*
   ========================
-  The Idea / The Details
+      The Problem
   ========================
   */
 
@@ -778,3 +778,57 @@ margin: 0;
     font-size: 3rem;
     line-height: 0px;
   }
+
+
+  /*
+  ========================
+        The Data
+  ========================
+  */
+
+  .data-percentages {
+    display: flex;
+    margin: 4em 0;
+    margin-bottom: 8em;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  .report {
+    display: flex;
+  }
+
+  .report img {
+    object-fit: contain;
+  }
+
+  .open-btn, .close-btn {
+    border: none;
+    margin-left: .5em;
+    font-size: 1em;
+    background: none;
+    color: #BEE1D6;
+  }
+
+  .identifying-user h2{
+    margin: 2em 0;
+  }
+
+.diagrams {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.diagrams span {
+  display: block;
+}
+
+.diagrams img {
+  max-width: 415px;
+  object-fit: contain;
+  border: 1px solid #000;
+}
