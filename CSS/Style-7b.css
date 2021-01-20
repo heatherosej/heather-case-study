@@ -12,6 +12,10 @@
     src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
   }
 
+@root {
+  /* --TradeGothicLTStd */
+}
+
 html, body{
   margin: 0;
   padding: 0;
@@ -593,16 +597,15 @@ margin: 0;
   }
   
   .task-buddy-content{
-    height: 30px;
-    margin: 200px auto;
+    margin: 200px 3em;
     position: relative;
   }
   
   .task-buddy-text {
     background: #BEE1D6;
-    max-width: 65%;
+    max-width: 85%;
+    min-width: auto;
     display: block;
-    margin: 0 2em;
     word-wrap: break-word;
     padding-left: 1em;
   }
@@ -615,15 +618,21 @@ margin: 0;
     font-size: 20px;
     background: #fff;
     padding: 1em 2em;
-    border: 7px solid #EB9893;
+    border: 10px solid #EB9893;
     font-family: OCR_A_Std_Regular;
-    box-shadow: 0 0 0px 2px #444444, inset 0 0 0px 2px #444444;
+    box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   }
   
   @media (max-width: 1130px) {
     .task-buddy-floating-text {
       top: 3em;
-      margin-left: 3.5em;
+      right: 1.5em;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .task-buddy-floating-text {
+      right: 1em;
     }
   }
   
@@ -632,3 +641,194 @@ margin: 0;
   The Idea / The Details
   ========================
   */
+
+  .container {
+    margin: 2em;
+  }
+
+  .container-heading {
+    
+  }
+
+  .container-child {
+    padding: 0 1.3em;
+  }
+
+  .max-width-1130 {
+      max-width: 85%;
+  }
+
+  .container-p {
+    line-height: 23.46px;
+    font-weight: 400;
+    margin-bottom: 1.7em;
+    font-size: 18px;
+  }
+
+  .theIdea-section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .the-idea {
+    width: 64%;
+  }
+
+  .the-details .task-buddy-h1 {
+    margin-left: -.5em;
+    margin-bottom: .5em;
+  }
+
+  .the-details {
+    min-width: 30%;
+    padding-left: 3em;
+    border-left: 1px solid #000;
+  }
+
+  .team {
+    display: flex;
+    gap: 1em;
+  }
+
+  .the-details span {
+    display: block;
+    font-weight: 400;
+  }
+
+  .the-details .theDetails-heading, .theDetails-title {
+    font-size: 22px;
+    font-family: 'OCR_A_Std_Regular';
+  }
+
+  .the-details .theDetails-description {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .info-bar {
+    width: 93%;
+    background: #BEE1D6;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    box-shadow: 10px 10px 0 #FABD3F;
+  }
+
+
+  .info-bar p {
+    /* font-size: 29.26px; */
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'TradeGothicLTStd-BoldExt';
+    line-height: 28px;
+  }
+
+  .info-bar span {
+    display: block;
+    margin-top: -1em;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  /*
+  ========================
+      The Problem
+  ========================
+  */
+
+  .the-problem-content {
+    position: relative;
+  }
+
+  .the-problem-description {
+    font-family: 'TradeGothicLTStd-Extended';
+    font-size: 24px;
+  }
+
+  .hypothesis-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hypothesis-section .orange-box {
+    border: 10px solid #EB9893;
+    box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
+    margin-top: 2.5em;
+    max-width: 485px;
+    align-self: flex-start;
+  }
+
+  .container-h2 {
+    margin-left: -1em;
+  }
+
+  .floating-inner {
+    padding: 1em 1.5em;
+    line-height: 30px;
+    font-family: OCR_A_Std_Regular;
+  }
+
+  .short-p {
+    max-width: 90%;
+    margin-bottom: 8em;
+    margin-right: 1em;
+  }
+
+  .info-icon {
+    font-size: 3rem;
+    line-height: 0px;
+  }
+
+
+  /*
+  ========================
+        The Data
+  ========================
+  */
+
+  .data-percentages {
+    display: flex;
+    margin: 4em 0;
+    margin-bottom: 8em;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  .report {
+    display: flex;
+  }
+
+  .report img {
+    object-fit: contain;
+  }
+
+  .open-btn, .close-btn {
+    border: none;
+    margin-left: .5em;
+    font-size: 1em;
+    background: none;
+    color: #BEE1D6;
+  }
+
+  .identifying-user h2{
+    margin: 2em 0;
+  }
+
+.diagrams {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.diagrams span {
+  display: block;
+}
+
+.diagrams img {
+  max-width: 415px;
+  object-fit: contain;
+  border: 1px solid #000;
+}
