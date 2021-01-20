@@ -579,6 +579,13 @@ margin: 0;
     height: 60px;
     line-height: 65px;
   }
+
+  .task-buddy-h2 {
+    font-family: ocr-a-std, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+  }
   
   .task-buddy-p {
     font-family: 'Work Sans';
@@ -644,10 +651,6 @@ margin: 0;
 
   .container {
     margin: 2em;
-  }
-
-  .container-heading {
-    
   }
 
   .container-child {
@@ -830,10 +833,34 @@ margin: 0;
 
 .diagrams span {
   display: block;
+  font-size: 20px;
+  margin: 1em 0;
 }
 
 .diagrams img {
   max-width: 415px;
   object-fit: contain;
   border: 1px solid #000;
+}
+
+.info-bar-people {
+  padding-left: 1em;
+  margin-top: 1em;
+  margin: 0;
+}
+
+.how-might-we {
+  margin: 4em 0;
+}
+
+.how-might-we ul{
+  margin-left: 7em;
+  margin-top: 2em;
+}
+
+.how-might-we ul li {
+  margin-bottom: 1em;
+  list-style-type: circle;
+  list-style-image: url('../Images/Ellipse_1.png');
+  padding-left: .5em;
 }
