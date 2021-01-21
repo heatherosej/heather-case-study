@@ -1,14 +1,15 @@
 /* HEADER & FOOTER STYLE */
 
+/* header,footer { border: 2px solid lightblue; } */
 /* header * { border: 1px solid #fff; } */
 /* footer * { border: 1px solid #fff; } */
+.web-layout { border: 2px solid lightgreen; }
 
 .sides { padding: 0 25px; }
 .web-layout {
-    border: 2px solid lightgreen;
     width: 100%;
-    max-width: 650px;
-    /* max-width: 1440px; */
+    /* max-width: 650px; */
+    max-width: 1440px;
     margin:  0 auto;
 }
 .navs ul { padding: 0; }
