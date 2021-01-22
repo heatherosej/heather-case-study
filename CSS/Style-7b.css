@@ -731,6 +731,10 @@ padding-bottom: 20px;
     font-size: 24px;
   }
 
+  .the-problem-details {
+    max-width: 50%;
+  }
+
   .hypothesis-section {
     display: flex;
     justify-content: space-between;
@@ -739,7 +743,7 @@ padding-bottom: 20px;
   .hypothesis-section .orange-box {
     border: 10px solid #EB9893;
     box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
-    margin-top: 2.5em;
+    margin-top: -4em;
     max-width: 485px;
     align-self: flex-start;
   }
@@ -870,6 +874,11 @@ padding-bottom: 20px;
     justify-content: space-around;
   }
 
+  .hypothesis-section .orange-box {
+    max-width: 40%;
+    margin-top: -6em;
+  }
+
   .report {
     width: 33.33%;
     flex-direction: column;
@@ -884,6 +893,12 @@ padding-bottom: 20px;
   }
 }
 
+@media (max-width: 1040px) {
+  .hypothesis-section .orange-box {
+    margin-top: -8em;
+  }
+}
+
 @media (max-width: 850px) {
   .theIdea-section-content {
     flex-wrap: wrap;
@@ -891,6 +906,10 @@ padding-bottom: 20px;
 
   .the-idea {
     width: 100% !important;
+  }
+
+  .the-problem-details {
+    max-width: 90%;
   }
 
   .hypothesis-section {
@@ -918,6 +937,10 @@ padding-bottom: 20px;
     max-width: 100% !important;
   }
   
+  .short-p {
+    max-width: 100%;
+  }
+
   .data-percentages {
     flex-direction: column;
     justify-content: center;
@@ -953,5 +976,15 @@ padding-bottom: 20px;
 
   .diagrams img {
     width: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  .task-buddy-h1 {
+    font-size: 28px;
+  }
+
+  .open-btn img, .close-btn img{
+    width: 30px;
   }
 }
