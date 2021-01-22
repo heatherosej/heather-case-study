@@ -732,7 +732,7 @@ padding-bottom: 20px;
   }
 
   .the-problem-details {
-    max-width: 50%;
+    /* max-width: 50%; */
   }
 
   .hypothesis-section {
@@ -743,7 +743,7 @@ padding-bottom: 20px;
   .hypothesis-section .orange-box {
     border: 10px solid #EB9893;
     box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
-    margin-top: -4em;
+    margin-top: 2em;
     max-width: 485px;
     align-self: flex-start;
   }
@@ -760,7 +760,6 @@ padding-bottom: 20px;
 
   .short-p {
     max-width: 90%;
-    margin-bottom: 8em;
     margin-right: 1em;
   }
 
@@ -876,7 +875,6 @@ padding-bottom: 20px;
 
   .hypothesis-section .orange-box {
     max-width: 40%;
-    margin-top: -6em;
   }
 
   .report {
@@ -890,12 +888,6 @@ padding-bottom: 20px;
   .task-buddy-floating-text {
     top: 3em;
     right: 1.5em;
-  }
-}
-
-@media (max-width: 1040px) {
-  .hypothesis-section .orange-box {
-    margin-top: -8em;
   }
 }
 
@@ -918,8 +910,8 @@ padding-bottom: 20px;
 
   .hypothesis-section .orange-box {
     max-width: 100% !important;
-    margin-top: -3em !important;
-    margin-bottom: 4em;
+    /* margin-top: -3em !important; */
+    margin-bottom: 1em;
   }
 }
 
