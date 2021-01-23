@@ -806,7 +806,7 @@ The Idea / The Details
   margin: 2em 0;
 }
 
-.diagrams {
+.lightbox {
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -814,13 +814,13 @@ The Idea / The Details
   margin-top: 3em;
 }
 
-.diagrams span {
+.lightbox span {
   display: block;
   font-size: 20px;
   margin: 1em 0;
 }
 
-.diagrams img {
+.lightbox img {
   max-width: 415px;
   object-fit: contain;
   border: 1px solid #000;
@@ -913,7 +913,7 @@ The Idea / The Details
 /*******************************/
 
 @media (max-width: 1310px) {
-  .diagrams {
+  .lightbox {
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -976,7 +976,6 @@ The Idea / The Details
 
   .hypothesis-section .orange-box {
     max-width: 100% !important;
-    /* margin-top: -3em !important; */
     margin-bottom: 1em;
   }
 }
@@ -1050,10 +1049,6 @@ The Idea / The Details
     margin-left: -2em;
   }
 
-  .table-box img {
-    /* width: 40pcx; */
-  }
-
   .box-heading {
     font-size: .7rem;
   }
@@ -1080,11 +1075,11 @@ The Idea / The Details
     margin-left: 2em;
   }
 
-  .diagrams {
+  .lightbox {
     margin-left: 0 1em;
   }
 
-  .diagrams img {
+  .lightbox img {
     width: 100%;
   }
 }
