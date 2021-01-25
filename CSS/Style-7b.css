@@ -565,12 +565,20 @@ padding-bottom: 20px;
 ========================
 */
 
+body p {
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 25.6px;
+  font-weight: 300;
+  /* margin-bottom: 1.7em; */
+}
+
 .task-buddy-h1, .info-bar p {
   font-family: 'TradeGothicLTStd-BoldExt';
 }
 
 .task-buddy-h1 {
-  font-size: 36px;
+  font-size: 36px !important;
   height: 60px;
   line-height: 65px;
 }
@@ -580,13 +588,6 @@ padding-bottom: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-}
-
-.task-buddy-p {
-  font-family: 'Work Sans';
-  font-size: 20px;
-  line-height: 124.3%;
-  color: #000000;
 }
 
 .task-buddy{
@@ -636,20 +637,20 @@ The Idea / The Details
 }
 
 .container-child {
-  padding: 0 1.3em;
+  padding: 0 2.3em;
 }
 
 .max-width-1130 {
     max-width: 85%;
 }
 
-.container-p {
+/* .container-p {
   letter-spacing: 1px;
   line-height: 25.6px;
   font-weight: 300;
   margin-bottom: 1.7em;
   font-size: 16px;
-}
+} */
 
 .theIdea-section-content {
   display: flex;
@@ -659,6 +660,11 @@ The Idea / The Details
 
 .the-idea {
   width: 64%;
+}
+
+.the-idea p {
+  font-size: 20px !important;
+  line-height: 124.3%;
 }
 
 .the-details .task-buddy-h1 {
@@ -702,7 +708,7 @@ The Idea / The Details
 
 
 .info-bar p {
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: 600;
   line-height: 28px;
 }
@@ -726,11 +732,16 @@ The Idea / The Details
 
 .the-problem-description {
   font-family: 'TradeGothicLTStd-Extended';
-  font-size: 24px;
+  font-size: 24px !important;
+  margin-bottom: 1em;
+}
+
+.the-problem-content p {
+  line-height: 124.3%;
 }
 
 .the-problem-details {
-  /* max-width: 50%; */
+  margin-bottom: 3em;
 }
 
 .hypothesis-section {
@@ -746,14 +757,25 @@ The Idea / The Details
   align-self: flex-start;
 }
 
+.hypothesis-section h2 {
+  margin-bottom: 1.5em;
+}
+
 .container-h2 {
   margin-left: -1em;
 }
 
 .floating-inner {
-  padding: 1em 1.5em;
+  padding: 0 1.5em;
   line-height: 30px;
+  padding-bottom: 1em;
+}
+
+#special {
+  font-size: 16px !important;
   font-family: OCR_A_Std_Regular;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .short-p {
@@ -776,7 +798,7 @@ The Idea / The Details
 .data-percentages {
   display: flex;
   margin: 4em 0;
-  margin-bottom: 8em;
+  margin-bottom: 6em;
   justify-content: center;
   align-items: center;
   height: 180px;
@@ -798,12 +820,13 @@ The Idea / The Details
   margin-bottom: -5px;
 }
 
-.close-btn img{
-  margin-bottom: 10px;
-}
-
 .identifying-user h2{
   margin: 2em 0;
+  margin-bottom: 0;
+}
+
+.identifying-user p {
+  font-size: 20px !important;
 }
 
 .lightbox {
@@ -821,7 +844,8 @@ The Idea / The Details
 }
 
 .lightbox img {
-  max-width: 415px;
+  width: 415px;
+  height: 298px;
   object-fit: contain;
   border: 1px solid #000;
 }
@@ -836,14 +860,23 @@ The Idea / The Details
   margin: 4em 0;
 }
 
+.how-might-we h2 {
+  margin: 2.5em 0;
+  margin-bottom: 0;
+}
+
 .how-might-we ul{
   margin-left: 7em;
   margin-top: 2em;
 }
 
 .how-might-we ul li {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em !important;
   list-style-type: circle;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 25.6px;
+  font-weight: 300;
   list-style-image: url('../Images/Ellipse_1.png');
   padding-left: .5em;
 }
@@ -854,12 +887,32 @@ The Idea / The Details
 ========================
 */
 
-.the-content-strategy {}
+.the-content-strategy p {
+  font-size: 20px !important;
+  /* background: #000; */
+}
+
+.the-content-strategy .the-problem-description {
+  margin: 3em 0;
+}
+
+.the-content-strategy .para {
+  font-size: 20px !important;
+}
+
+.the-content-strategy .highlight {
+  font-size: 24px !important;
+}
+
+.the-content-strategy h2{
+  margin-left: -1em;
+}
 
 .analysis-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin-bottom: 1em;
+  margin-top: 4em;
+  margin-bottom: 5.5em;
 }
 
 .analysis-table-second {
@@ -914,6 +967,56 @@ The Idea / The Details
 .value-prop span{
   display: inline;
   font-family: work-sans, sans-serif;
+}
+
+.value-prop p, .bold {
+  font-size: 24px !important;
+  padding-left: .5em;
+}
+
+.user-journey h2 {
+  margin: 2.2em 0;
+}
+
+.user-journey p {
+  font-size: 20px;
+}
+
+.user-journey section span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.user-journey section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.roxy {
+  display: flex;
+  gap: 2em;
+}
+
+.roxy section, .how-might-we {
+  display: flex;
+  flex-direction: column;
+}
+
+.roxy section {
+  max-width: 70%;
+}
+
+.how-might-we {
+  margin: 0;
+  min-width: 300px;
+}
+
+.how-might-we ul {
+  margin-left: 0;
+}
+
+.how-might-we ul li {
+  margin: 0;
 }
 
 /*******************************
@@ -1004,7 +1107,7 @@ The Idea / The Details
   }
 
   .close-btn img{
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
   }
 
   .table-box img {
@@ -1050,7 +1153,7 @@ The Idea / The Details
   }
 
   .task-buddy-h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   .open-btn img, .close-btn img{
