@@ -1021,6 +1021,11 @@ The Idea / The Details
   gap: 2em;
 }
 
+.roxy img {
+  height: 200px;
+  margin-right: 1em;
+}
+
 .roxy section, .how-might-we {
   display: flex;
   flex-direction: column;
@@ -1042,6 +1047,33 @@ The Idea / The Details
 
 .user-j-cont ul li {
   margin: 0 !important;
+}
+
+.firs-time-journey {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.firs-time-journey img {
+  max-width: 1440px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.task-flow .lightbox .diagram {
+  width: 50%;
+  gap: 2em;
+  box-sizing: border-box;
+}
+
+.task-flow .lightbox .diagram img {
+  border: none;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.task-flow .lightbox .diagram span{
+  /* border: 1px solid #aaa; */
 }
 
 /*******************************
@@ -1099,6 +1131,22 @@ The Idea / The Details
   }
 }
 
+@media (max-width: 1030px) {
+  .task-flow .lightbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .task-flow .lightbox .diagram{
+    width: 100%;
+}
+
+  .task-flow .lightbox .diagram img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 850px) {
   .theIdea-section-content {
     flex-wrap: wrap;
@@ -1135,6 +1183,11 @@ The Idea / The Details
   .box-different {
     /* background: #000; */
     word-wrap: wrap;
+  }
+
+  .user-journey section {
+    flex-direction: column;
+    gap: 2em;
   }
 }
 
