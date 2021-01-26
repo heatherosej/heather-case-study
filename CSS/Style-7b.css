@@ -638,6 +638,7 @@ The Idea / The Details
 
 .container-child {
   padding: 0 2.3em;
+  overflow: hidden;
 }
 
 .max-width-1130 {
@@ -823,6 +824,24 @@ The Idea / The Details
 .identifying-user h2{
   margin: 2em 0;
   margin-bottom: 0;
+  overflow: hidden;
+}
+
+.dashed-border {
+  background: #fff;
+  overflow: hidden;
+}
+
+.dashed-border::after {
+  content: '';
+  top: 50%;
+  min-width: 100%;
+  height: 1px;
+  position: absolute;
+  background-image: url('../Images/dashed_bg.png');
+  background-repeat: repeat-x;
+  background-size: 10px;
+  margin: 0 1em;
 }
 
 .identifying-user p {
@@ -1009,19 +1028,20 @@ The Idea / The Details
 
 .roxy section {
   max-width: 70%;
+  justify-content: flex-start;
 }
 
-.how-might-we {
+.user-j-cont {
   margin: 0;
-  min-width: 300px;
+  min-width: 40%;
 }
 
-.how-might-we ul {
+.user-j-cont ul {
   margin-left: 0;
 }
 
-.how-might-we ul li {
-  margin: 0;
+.user-j-cont ul li {
+  margin: 0 !important;
 }
 
 /*******************************
