@@ -580,7 +580,7 @@ body p {
 .task-buddy-h1 {
   font-size: 36px !important;
   height: 60px;
-  line-height: 65px;
+  /* line-height: 65px; */
 }
 
 .task-buddy-h2 {
@@ -915,8 +915,13 @@ The Idea / The Details
   margin-bottom: 5.5em;
 }
 
+.analysis-table p {
+  text-align: center;
+}
+
 .analysis-table-second {
   display: none;
+  margin-top: -4em;
 }
 
 .table-box {
@@ -1082,7 +1087,7 @@ The Idea / The Details
   .the-idea {
     width: 100% !important;
   }
-
+  
   .the-problem-details {
     max-width: 90%;
   }
@@ -1094,6 +1099,22 @@ The Idea / The Details
   .hypothesis-section .orange-box {
     max-width: 100% !important;
     margin-bottom: 1em;
+  }
+
+  .productive {
+    font-size: .2rem !important;
+    background: #000;
+  }
+}
+
+@media (max-width: 745px) {
+  .analysis-table {
+    margin-left: -2em;
+  }
+
+  .box-different {
+    /* background: #000; */
+    word-wrap: wrap;
   }
 }
 
@@ -1163,11 +1184,16 @@ The Idea / The Details
 
 @media (max-width: 580px) {
   .analysis-table {
-    margin-left: -2em;
+    margin-left: -4em;
+  }
+
+  .analysis-table p {
+    font-size: .8rem !important;
   }
 
   .box-heading {
     font-size: .7rem;
+    font-weight: bold;
   }
 
   .table-box p {
@@ -1176,10 +1202,6 @@ The Idea / The Details
 
   .analysis-table img {
     width: 46px;
-  }
-
-  .productive {
-    font-size: .2rem !important;
   }
 }
 
