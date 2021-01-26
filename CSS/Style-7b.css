@@ -863,7 +863,8 @@ The Idea / The Details
 }
 
 .lightbox img {
-  width: 415px;
+  width: 100%;
+  max-width: 415px;
   height: 298px;
   object-fit: contain;
   border: 1px solid #000;
@@ -1072,8 +1073,57 @@ The Idea / The Details
   object-fit: contain;
 }
 
-.task-flow .lightbox .diagram span{
-  /* border: 1px solid #aaa; */
+/*
+========================
+  The Product Design
+========================
+*/
+
+.the-product-design .lightbox {
+  gap: 2em;
+}
+
+.the-product-design .task-buddy-h2 {
+  margin: 3em 0;
+}
+
+.low-fidelity section {
+  display: flex;
+  gap: 5em;
+}
+
+.the-product-design .lightbox .diagram img{
+  width: 100% !important;
+}
+
+.the-product-design .lightbox .diagram:nth-child(2) img{
+  border: none !important;
+}
+
+.the-product-design .orange-box {
+  border: 10px solid #EB9893;
+  box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
+  margin-top: 2em;
+  max-width: 485px;
+  background: #e5e5e5;
+}
+
+.proto-img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.low-fidelity-right p {
+  margin-top: 2em;
+}
+
+.btn {
+  width: 450px;
+  height: 62px;
+  margin-top: 8em;
+  font-family: ocr-a-std, monospace;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*******************************
