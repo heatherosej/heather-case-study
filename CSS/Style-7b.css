@@ -299,7 +299,6 @@ h3 {
     font-style: normal;
     font-size: 24px;
     margin-top: 1.5em;
-    margin-bottom: -10;;
     color: black;
   }
   .a {
@@ -570,7 +569,13 @@ body p {
   letter-spacing: 1px;
   line-height: 25.6px;
   font-weight: 300;
-  /* margin-bottom: 1.7em; */
+  margin-bottom: 1.7em;
+}
+
+.strong {
+  font-family: work-sans, sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
 }
 
 .task-buddy-h1, .info-bar p {
@@ -580,14 +585,82 @@ body p {
 .task-buddy-h1 {
   font-size: 36px !important;
   height: 60px;
-  /* line-height: 65px; */
 }
 
 .task-buddy-h2 {
   font-family: ocr-a-std, monospace;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 24px !important;
+  /* background: #000 !important; */
+}
+
+.btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+  padding: 1em 2.5em;
+  font-family: OCR A Std;
+  font-size: 16px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary:focus, .btn-warning:focus, .btn-danger:focus {
+  outline: 5px solid #49A0DF;
+}
+
+.btn-disabled, .btn-disabled:hover, .btn-disabled:focus  {
+  background: #e4e4e4 !important;
+  line-height: 4em;
+}
+
+.btn-primary:active, .btn-warning:active, .btn-disabled:active {
+  outline: none;
+}
+
+/* primary button */
+
+.btn-primary {
+  background: #BEE1D6;
+}
+
+.btn-primary:hover {
+  background: #D9FCF1;
+}
+
+.btn-primary:active {
+  box-shadow: 5px 5px 1px #FABD3F;
+}
+
+/* warning button */
+
+.btn-warning {
+  background: #FABD3F;
+}
+
+.btn-warning:hover {
+  background: #FFC90A; 
+}
+
+.btn-warning:active {
+  box-shadow: 5px 5px 1px #BEE1D6;
+}
+
+/* danger button  */
+
+.btn-danger {
+  background: #EB9893;
+}
+
+.btn-danger:hover {
+  background: #FFCBC7;
+}
+
+.btn-danger:active {
+  box-shadow: 5px 5px 1px #FABD3F;
+  outline: none;
 }
 
 .task-buddy{
@@ -633,25 +706,25 @@ The Idea / The Details
 */
 
 .container {
-  margin: 2em;
+  margin: 2.5em;
 }
 
 .container-child {
   padding: 0 2.3em;
-  overflow: hidden;
+  padding-right: 0;
 }
 
 .max-width-1130 {
     max-width: 85%;
 }
 
-/* .container-p {
-  letter-spacing: 1px;
-  line-height: 25.6px;
-  font-weight: 300;
-  margin-bottom: 1.7em;
-  font-size: 16px;
-} */
+.container-p {
+  letter-spacing: 1px !important;
+  line-height: 25.6px !important;
+  font-weight: 300 !important;
+  margin-bottom: 1.7em !important;
+  font-size: 16px !important;
+}
 
 .theIdea-section-content {
   display: flex;
@@ -676,7 +749,7 @@ The Idea / The Details
 .the-details {
   min-width: 30%;
   padding-left: 3em;
-  border-left: 1px solid #000;
+  border-left: 1px dashed #000;
 }
 
 .team {
@@ -700,11 +773,11 @@ The Idea / The Details
 }
 
 .info-bar {
-  width: 93%;
   background: #BEE1D6;
-  margin: 0 auto;
+  margin: 0 3em;
   margin-bottom: 3em;
   box-shadow: 10px 10px 0 #FABD3F;
+  margin-left: 2.5em;
 }
 
 
@@ -754,7 +827,7 @@ The Idea / The Details
   border: 10px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   margin-top: 2em;
-  max-width: 485px;
+  max-width: 465px;
   align-self: flex-start;
 }
 
@@ -763,11 +836,12 @@ The Idea / The Details
 }
 
 .container-h2 {
-  margin-left: -1em;
+  margin-left: -1.6em;
 }
 
 .floating-inner {
-  padding: 0 1.5em;
+  padding: 0 1em;
+  margin-bottom: 0;
   line-height: 30px;
   padding-bottom: 1em;
 }
@@ -777,6 +851,7 @@ The Idea / The Details
   font-family: OCR_A_Std_Regular;
   line-height: 30px;
   font-weight: 400;
+  letter-spacing: 0;
 }
 
 .short-p {
@@ -797,6 +872,7 @@ The Idea / The Details
 */
 
 .data-percentages {
+  width: 100%;
   display: flex;
   margin: 4em 0;
   margin-bottom: 6em;
@@ -844,9 +920,9 @@ The Idea / The Details
   min-width: 100%;
   height: 1px;
   position: absolute;
-  background-image: url('../Images/dashed_bg.png');
+  background-image: url('../Images/Line_32.png');
   background-repeat: repeat-x;
-  background-size: 10px;
+  /* background-size: 10px; */
   margin: 0 1em;
 }
 
@@ -877,9 +953,11 @@ The Idea / The Details
 }
 
 .info-bar-people {
+  width: auto;
   padding: 0 1em;
   padding-bottom: 1px;
   margin: 0;
+  margin-right: .5em;
 }
 
 .how-might-we {
@@ -926,12 +1004,18 @@ The Idea / The Details
   font-size: 20px !important;
 }
 
-.the-content-strategy .highlight {
-  font-size: 24px !important;
+.highlight {
+  font-family: TradeGothicLTStd-Extended;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .the-content-strategy h2{
-  margin-left: -1em;
+  margin-left: -1.6em;
 }
 
 .analysis-table {
@@ -995,6 +1079,11 @@ The Idea / The Details
   height: auto;
 }
 
+.value-prop {
+  width: 100%;
+  margin-left: -2.3em;
+}
+
 .value-prop span{
   display: inline;
   font-family: work-sans, sans-serif;
@@ -1006,7 +1095,8 @@ The Idea / The Details
 }
 
 .user-journey h2 {
-  margin: 2.2em 0;
+  margin: 2.2em -1.6em;
+  margin-right: 0;
 }
 
 .user-journey p {
@@ -1091,6 +1181,7 @@ The Idea / The Details
 
 .the-product-design .task-buddy-h2 {
   margin: 3em 0;
+  margin-left: -1.6em;
 }
 
 .low-fidelity section {
@@ -1099,12 +1190,28 @@ The Idea / The Details
 }
 
 .low-fidelity-right p {
-  max-width: 85%;
+  /* max-width: 85%; */
   text-align: left;
 }
 
 .low-fidelity-right {
   text-align: center;
+}
+
+.low-fi-btn-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flow-fi-btn {
+  display: inline-block;
+  width: 60% !important;
+  max-width: 447px;
+  margin-top: 6em;
+  text-decoration: none;
+  color: #000;
 }
 
 .the-product-design .lightbox .diagram img{
@@ -1119,7 +1226,6 @@ The Idea / The Details
   border: 10px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   margin-top: 2em;
-  max-width: 485px;
   background: #e5e5e5;
 }
 
@@ -1130,16 +1236,6 @@ The Idea / The Details
 
 .low-fidelity-right p {
   margin-top: 2em;
-}
-
-.btn {
-  max-width: 450px;
-  width: 100%;
-  height: 62px;
-  margin-top: 8em;
-  font-family: ocr-a-std, monospace;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 .phone-demos {
@@ -1155,6 +1251,8 @@ The Idea / The Details
 .phone-demos img {
   width: 300px;
 }
+
+
 
 /*******************************
 /*------------------------------
@@ -1184,7 +1282,7 @@ The Idea / The Details
   }
 
   .report {
-    width: 33.33%;
+    /* width: 33.33%; */
     flex-direction: column;
     align-items: center;
   }
@@ -1300,10 +1398,6 @@ The Idea / The Details
     width: 28px;
   }
 
-  .close-btn img{
-    /* margin-bottom: 8px; */
-  }
-
   .table-box img {
     max-width: 64px;
   }
@@ -1338,6 +1432,9 @@ The Idea / The Details
   .data-percentages {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .data-percentages  p {
   }
   
   .report {
