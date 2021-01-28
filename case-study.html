@@ -62,7 +62,7 @@
             happen?
           </p>
           <p class="container-p">
-            <strong>Tasky Buddy</strong> is the solution for you. We keep track of your goals and daily tasks
+            <strong>Task Buddy</strong> is the solution for you. We keep track of your goals and daily tasks
             and send
             you gentle reminders to do them as often as you wish.
           </p>
@@ -97,8 +97,7 @@
     </div>
   </section>
   <!-- End The Idea & Detail Section -->
-
-
+  
   <div class="info-bar">
     <p>&quot;Memory and follow through are, like, the biggest things that keep me from achieving a goal.&quot;</p>
     <span>—Christina Coates, User Research Interview</span>
@@ -153,7 +152,7 @@
         <div class="container-child">
           <p class="container-p max-width-1130">
             We conducted a survey with 35 responses to gain quantitative insight into productivity, motivation and gaming.
-            We also held 5 user interviews, <strong>3 of which I interviewed</strong>, to learn more first-hand,
+            We also held 5 user interviews, <strong class="strong">3 of which I interviewed</strong>, to learn more first-hand,
             qualitative experience.
           </p>
         </div>
@@ -177,8 +176,8 @@
 
         <div class="container-child">
           <div class="the-problem-description max-width-1130">
-            The results confirmed that <strong>people don’t feel effective</strong> at managing their to-do’s and most are
-            <strong>motivated by a sense of progress</strong> and/or accountability.
+            The results confirmed that <strong class="strong">people don’t feel effective</strong> at managing their to-do’s and most are
+            <strong class="strong">motivated by a sense of progress</strong> and/or accountability.
           </div>
         </div>
 
@@ -210,7 +209,7 @@
         </div>
         <!-- info-bar -->
         <div class="info-bar info-bar-people">
-          <p class="max-width-1130">People want an interactive, fun tool that helps them manage tasks 
+          <p>People want an interactive, fun tool that helps them manage tasks 
             and accomplish their goals with built-in accountability 
             checks.</p>
         </div>
@@ -403,7 +402,7 @@
             </div>
           </div>
           
-          <p class="para">I discovered there are a lot of habit apps with avatars, but <strong>productivity apps do not include 
+          <p class="para">I discovered there are a lot of habit apps with avatars, but <strong class="strong">productivity apps do not include 
             any gaming elements, avatars, or social elements.</strong> I loved the robustness of Any.do, the visual progress 
             charts in Productive, and the adorable avatar in Plant Nanny. 
           </p>
@@ -414,7 +413,7 @@
           <!-- Brainstorming & Feature Prioritization -->
          <div class="brainstorming">
           <h2 class="task-buddy-h2 dashed-border">Brainstorming & Feature Prioritization</h2>
-          <p>Using the data we had compiled, we brainstormed on features for Task Buddy. <strong>I love concepting and always 
+          <p>Using the data we had compiled, we brainstormed on features for Task Buddy. <strong class="strong">I love concepting and always 
             enjoy brainstorming and mind mapping in a sketchbook</strong>. Within the group, we decided to focus on task management,
             the Tamagotchi, sociability and the connection to the avatar. Using dot voting, we decided on the top features to 
             include and made a prioritization matrix.
@@ -510,7 +509,7 @@
         <div class="container-child">
           <h2 class="task-buddy-h2">Wireframes</h2>
           <div class="container-child max-width-1130">
-            <p>I started with sketching wireframes and <strong>brainstorming on how the task section could work</strong>. 
+            <p>I started with sketching wireframes and <strong class="strong">brainstorming on how the task section could work</strong>. 
               My teammates focused on the avatar, stats, and how other features could be accessed.</p>
           </div>
           <!-- lightbox -->
@@ -537,15 +536,19 @@
                 </p>
               </div>
               <div class="low-fidelity-right">
-                <p>In our first draft we prioritized clear labeling and a simple user interface. We focused on task management, 
+                <p>In our first draft we <strong>prioritized clear labeling</strong> and a simple user interface. We focused on task management, 
                   list organization, task timer, progress tracking and a calendar.
                 </p>
-                <button class="btn">Open low-fi prototype</button>
+                <div class="low-fi-btn-container">
+                  <a href="https://www.figma.com/file/SjOksog8tG5HI6Z9Lk0kAi/Initial-Sketches?node-id=0%3A1" 
+                  class="btn-danger flow-fi-btn" tabindex="1">Open low-fi prototype</a>
+                </div>
+                <!-- <a class="btn-disabled">Discover More!</a> -->
               </div>
             </section>
             <div class="phone-demos">
               <div>
-                <img src="./Images/TB-P1-home.png" alt="">
+                <img src="./Images/TB-P1-home.png" alt=""> 
               </div>
               <div>
                 <img src="./Images/TB-p1-calendar.png" alt="">
@@ -559,7 +562,7 @@
             </div>
 
             <h2 class="task-buddy-h2 dashed-border">Testing, Round 1</h2>
-            <p><strong>Objective:</strong> Is the user able to <strong>easily navigate through the app</strong>, create and manage tasks and lists, 
+            <p><strong class="strong">Objective:</strong> Is the user able to <strong class="strong">easily navigate through the app</strong>, create and manage tasks and lists, 
               and calendar events?
             </p>
             <div class="data-percentages">
@@ -577,6 +580,23 @@
                 <img src="./Images/68_per.png" alt="">
                 <p class="floating-inner">25 % couldn’t find the add a task button</p>
               </div>
+            </div>
+            <p class="the-problem-description highlight">
+              Conclusion: We needed to focus on the navigation structure. Make sure that the symbols and button placement are what and where users expect it.
+            </p>
+            <p class="close-text">
+              <strong>Our users were helpful in showing us potential issues</strong> with the format of our prototype and gave us a better insight as to how the app might be used. We were able to learn 
+              more about <strong>the order of how tasks are intuitively created by users</strong> and what features might be preferred by them.
+            </p>
+
+            <!-- Interation of the Prototype -->
+            <h2 class="task-buddy-h2 dashed-border">Interation of the Prototype</h2>
+            <div class="container-child">
+              <p>
+                When it came to the next iteration, it was clear that we needed to <strong>rethink the information architecture.</strong>  We studied the interfaces of our competitors again for more insight into good UI patterns. 
+                I brought in a some graphic elements to get an idea of our user’s preferences with the next round of testing. We incorporated blue icons and text for our calls to action, breadcrumbs, and labeling. 
+                Not exactly a low-fidelity version, but good to <strong>start building our tone of voice.</strong>
+              </p>
             </div>
           </div>
         </div>
