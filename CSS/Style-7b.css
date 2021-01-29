@@ -608,7 +608,7 @@ body p {
 }
 
 .btn-primary:focus, .btn-warning:focus, .btn-danger:focus {
-  outline: 5px solid #49A0DF;
+  outline: none;
 }
 
 .btn-disabled, .btn-disabled:hover, .btn-disabled:focus  {
