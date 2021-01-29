@@ -7,14 +7,14 @@ function toggleNavMenu () {
     menuBtn.classList.toggle('fa-times');
     
     const navBar = document.querySelector('.navbar');
-    navBar.classList.toggle('active');
+    navBar.classList.toggle('nav-active');
     document.body.classList.toggle('lock');
 }
 
 function handleEvents (e) {
     e.preventDefault()
     const navBar = document.querySelector('.navbar');
-    const isActive = navBar.classList.contains('active');
+    const isActive = navBar.classList.contains('nav-active');
     const notOpen = document.querySelector('.fa-bars') === e.target;
     const isClickedOutside = e.target !== window && !navBar.contains(e.target);
     const [ESCAPE, DESKTOP] = [27, 650];
