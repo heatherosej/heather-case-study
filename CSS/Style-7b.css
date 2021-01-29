@@ -298,7 +298,6 @@ h3 {
     font-style: normal;
     font-size: 24px;
     margin-top: 1.5em;
-    margin-bottom: -10;;
     color: black;
   }
   .a {
@@ -617,28 +616,103 @@ padding-bottom: 20px;
 ========================
 */
 
+body p {
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 25.6px;
+  font-weight: 300;
+  margin-bottom: 1.7em;
+}
+
+.strong {
+  font-family: work-sans, sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
+}
+
 .task-buddy-h1, .info-bar p {
   font-family: 'TradeGothicLTStd-BoldExt';
 }
 
 .task-buddy-h1 {
-  font-size: 36px;
+  font-size: 36px !important;
   height: 60px;
-  line-height: 65px;
 }
 
 .task-buddy-h2 {
   font-family: ocr-a-std, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 24px !important;
+  /* background: #000 !important; */
 }
 
-.task-buddy-p {
-  font-family: 'Work Sans';
-  font-size: 20px;
-  line-height: 124.3%;
-  color: #000000;
+.btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+  padding: 1em 2.5em;
+  font-family: OCR A Std;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary:focus, .btn-warning:focus, .btn-danger:focus {
+  outline: 5px solid #49A0DF;
+}
+
+.btn-disabled, .btn-disabled:hover, .btn-disabled:focus  {
+  background: #e4e4e4 !important;
+  line-height: 4em;
+}
+
+.btn-primary:active, .btn-warning:active, .btn-disabled:active {
+  outline: none;
+}
+
+/* primary button */
+
+.btn-primary {
+  background: #BEE1D6;
+}
+
+.btn-primary:hover {
+  background: #D9FCF1;
+}
+
+.btn-primary:active {
+  box-shadow: 5px 5px 1px #FABD3F;
+}
+
+/* warning button */
+
+.btn-warning {
+  background: #FABD3F;
+}
+
+.btn-warning:hover {
+  background: #FFC90A; 
+}
+
+.btn-warning:active {
+  box-shadow: 5px 5px 1px #BEE1D6;
+}
+
+/* danger button  */
+
+.btn-danger {
+  background: #EB9893;
+}
+
+.btn-danger:hover {
+  background: #FFCBC7;
+}
+
+.btn-danger:active {
+  box-shadow: 5px 5px 1px #FABD3F;
+  outline: none;
 }
 
 .task-buddy{
@@ -684,11 +758,12 @@ The Idea / The Details
 */
 
 .container {
-  margin: 2em;
+  margin: 2.5em;
 }
 
 .container-child {
-  padding: 0 1.3em;
+  padding: 0 2.3em;
+  padding-right: 0;
 }
 
 .max-width-1130 {
@@ -696,11 +771,11 @@ The Idea / The Details
 }
 
 .container-p {
-  letter-spacing: 1px;
-  line-height: 25.6px;
-  font-weight: 300;
-  margin-bottom: 1.7em;
-  font-size: 16px;
+  letter-spacing: 1px !important;
+  line-height: 25.6px !important;
+  font-weight: 300 !important;
+  margin-bottom: 1.7em !important;
+  font-size: 16px !important;
 }
 
 .theIdea-section-content {
@@ -713,6 +788,11 @@ The Idea / The Details
   width: 64%;
 }
 
+.the-idea p {
+  font-size: 20px !important;
+  line-height: 124.3%;
+}
+
 .the-details .task-buddy-h1 {
   margin-left: -.5em;
   margin-bottom: .5em;
@@ -721,7 +801,7 @@ The Idea / The Details
 .the-details {
   min-width: 30%;
   padding-left: 3em;
-  border-left: 1px solid #000;
+  border-left: 1px dashed #000;
 }
 
 .team {
@@ -745,16 +825,16 @@ The Idea / The Details
 }
 
 .info-bar {
-  width: 93%;
   background: #BEE1D6;
-  margin: 0 auto;
+  margin: 0 3em;
   margin-bottom: 3em;
   box-shadow: 10px 10px 0 #FABD3F;
+  margin-left: 2.5em;
 }
 
 
 .info-bar p {
-  font-size: 24px;
+  font-size: 24px !important;
   font-weight: 600;
   line-height: 28px;
 }
@@ -778,11 +858,16 @@ The Idea / The Details
 
 .the-problem-description {
   font-family: 'TradeGothicLTStd-Extended';
-  font-size: 24px;
+  font-size: 24px !important;
+  margin-bottom: 1em;
+}
+
+.the-problem-content p {
+  line-height: 124.3%;
 }
 
 .the-problem-details {
-  /* max-width: 50%; */
+  margin-bottom: 3em;
 }
 
 .hypothesis-section {
@@ -794,18 +879,31 @@ The Idea / The Details
   border: 10px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   margin-top: 2em;
-  max-width: 485px;
+  max-width: 465px;
   align-self: flex-start;
 }
 
+.hypothesis-section h2 {
+  margin-bottom: 1.5em;
+}
+
 .container-h2 {
-  margin-left: -1em;
+  margin-left: -1.6em;
 }
 
 .floating-inner {
-  padding: 1em 1.5em;
+  padding: 0 1em;
+  margin-bottom: 0;
   line-height: 30px;
+  padding-bottom: 1em;
+}
+
+#special {
+  font-size: 16px !important;
   font-family: OCR_A_Std_Regular;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .short-p {
@@ -826,12 +924,19 @@ The Idea / The Details
 */
 
 .data-percentages {
+  width: 100%;
   display: flex;
   margin: 4em 0;
-  margin-bottom: 8em;
+  margin-bottom: 6em;
   justify-content: center;
   align-items: center;
   height: 180px;
+}
+
+.data-percentages p {
+  font-family: ocr a std;
+  font-weight: 400;
+  font-size: 16px !important;
 }
 
 .report {
@@ -850,12 +955,31 @@ The Idea / The Details
   margin-bottom: -5px;
 }
 
-.close-btn img{
-  margin-bottom: 10px;
-}
-
 .identifying-user h2{
   margin: 2em 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.dashed-border {
+  background: #fff;
+  overflow: hidden;
+}
+
+.dashed-border::after {
+  content: '';
+  top: 50%;
+  min-width: 100%;
+  height: 1px;
+  position: absolute;
+  background-image: url('../Images/Line_32.png');
+  background-repeat: repeat-x;
+  /* background-size: 10px; */
+  margin: 0 1em;
+}
+
+.identifying-user p {
+  font-size: 20px !important;
 }
 
 .lightboxs {
@@ -873,19 +997,28 @@ The Idea / The Details
 }
 
 .lightboxs img {
+  width: 100%;
   max-width: 415px;
+  height: 298px;
   object-fit: contain;
   border: 1px solid #000;
 }
 
 .info-bar-people {
+  width: auto;
   padding: 0 1em;
   padding-bottom: 1px;
   margin: 0;
+  margin-right: .5em;
 }
 
 .how-might-we {
   margin: 4em 0;
+}
+
+.how-might-we h2 {
+  margin: 2.5em 0;
+  margin-bottom: 0;
 }
 
 .how-might-we ul{
@@ -894,8 +1027,12 @@ The Idea / The Details
 }
 
 .how-might-we ul li {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em !important;
   list-style-type: circle;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 25.6px;
+  font-weight: 300;
   list-style-image: url('../Images/Ellipse_1.png');
   padding-left: .5em;
 }
@@ -906,16 +1043,47 @@ The Idea / The Details
 ========================
 */
 
-.the-content-strategy {}
+.the-content-strategy p {
+  font-size: 20px !important;
+  /* background: #000; */
+}
+
+.the-content-strategy .the-problem-description {
+  margin: 3em 0;
+}
+
+.the-content-strategy .para {
+  font-size: 20px !important;
+}
+
+.highlight {
+  font-family: TradeGothicLTStd-Extended;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.the-content-strategy h2{
+  margin-left: -1.6em;
+}
 
 .analysis-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin-bottom: 1em;
+  margin-top: 4em;
+  margin-bottom: 5.5em;
+}
+
+.analysis-table p {
+  text-align: center;
 }
 
 .analysis-table-second {
   display: none;
+  margin-top: -4em;
 }
 
 .table-box {
@@ -963,10 +1131,180 @@ The Idea / The Details
   height: auto;
 }
 
+.value-prop {
+  width: 100%;
+  margin-left: -2.3em;
+}
+
 .value-prop span{
   display: inline;
   font-family: work-sans, sans-serif;
 }
+
+.value-prop p, .bold {
+  font-size: 24px !important;
+  padding-left: .5em;
+}
+
+.user-journey h2 {
+  margin: 2.2em -1.6em;
+  margin-right: 0;
+}
+
+.user-journey p {
+  font-size: 20px;
+}
+
+.user-journey section span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.user-journey section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.roxy {
+  display: flex;
+  gap: 2em;
+}
+
+.roxy img {
+  height: 200px;
+  margin-right: 1em;
+}
+
+.roxy section, .how-might-we {
+  display: flex;
+  flex-direction: column;
+}
+
+.roxy section {
+  max-width: 70%;
+  justify-content: flex-start;
+}
+
+.user-j-cont {
+  margin: 0;
+  min-width: 40%;
+}
+
+.user-j-cont ul {
+  margin-left: 0;
+}
+
+.user-j-cont ul li {
+  margin: 0 !important;
+}
+
+.firs-time-journey {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.firs-time-journey img {
+  max-width: 1440px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.task-flow .lightbox .diagram {
+  width: 50%;
+  gap: 2em;
+  box-sizing: border-box;
+}
+
+.task-flow .lightbox .diagram img {
+  border: none;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*
+========================
+  The Product Design
+========================
+*/
+
+.the-product-design .lightbox {
+  gap: 2em;
+}
+
+.the-product-design .task-buddy-h2 {
+  margin: 3em 0;
+  margin-left: -1.6em;
+}
+
+.low-fidelity section {
+  display: flex;
+  gap: 5em;
+}
+
+.low-fidelity-right p {
+  /* max-width: 85%; */
+  text-align: left;
+}
+
+.low-fidelity-right {
+  text-align: center;
+}
+
+.low-fi-btn-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flow-fi-btn {
+  display: inline-block;
+  width: 60% !important;
+  max-width: 447px;
+  margin-top: 6em;
+  text-decoration: none;
+  color: #000;
+}
+
+.the-product-design .lightbox .diagram img{
+  width: 100% !important;
+}
+
+.the-product-design .lightbox .diagram:nth-child(2) img{
+  border: none !important;
+}
+
+.the-product-design .orange-box {
+  border: 10px solid #EB9893;
+  box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
+  margin-top: 2em;
+  background: #e5e5e5;
+}
+
+.proto-img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.low-fidelity-right p {
+  margin-top: 2em;
+}
+
+.phone-demos {
+  margin: 6em 0;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-around;
+}
+
+.phone-demos img {
+  width: 300px;
+}
+
+
 
 /*******************************
 /*------------------------------
@@ -996,7 +1334,7 @@ The Idea / The Details
   }
 
   .report {
-    width: 33.33%;
+    /* width: 33.33%; */
     flex-direction: column;
     align-items: center;
   }
@@ -1023,6 +1361,42 @@ The Idea / The Details
   }
 }
 
+@media (max-width: 1030px) {
+  .task-flow .lightbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .task-flow .lightbox .diagram{
+    width: 100%;
+}
+
+  .task-flow .lightbox .diagram img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 890px) {
+  .low-fidelity section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .low-fidelity-right p {
+    margin: 0;
+  }
+
+  .low-fidelity section button {
+    margin: 4em auto;
+  }
+
+  .low-fidelity-right p {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 850px) {
   .theIdea-section-content {
     flex-wrap: wrap;
@@ -1031,7 +1405,7 @@ The Idea / The Details
   .the-idea {
     width: 100% !important;
   }
-
+  
   .the-problem-details {
     max-width: 90%;
   }
@@ -1044,6 +1418,27 @@ The Idea / The Details
     max-width: 100% !important;
     margin-bottom: 1em;
   }
+
+  .productive {
+    font-size: .2rem !important;
+    background: #000;
+  }
+}
+
+@media (max-width: 745px) {
+  .analysis-table {
+    margin-left: -2em;
+  }
+
+  .box-different {
+    /* background: #000; */
+    word-wrap: wrap;
+  }
+
+  .user-journey section {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 @media (max-width: 675px) {
@@ -1053,10 +1448,6 @@ The Idea / The Details
 
   .open-btn img, .close-btn img{
     width: 28px;
-  }
-
-  .close-btn img{
-    margin-bottom: 8px;
   }
 
   .table-box img {
@@ -1094,6 +1485,9 @@ The Idea / The Details
     flex-direction: column;
     justify-content: center;
   }
+
+  .data-percentages  p {
+  }
   
   .report {
     flex-direction: row;
@@ -1102,7 +1496,7 @@ The Idea / The Details
   }
 
   .task-buddy-h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   .open-btn img, .close-btn img{
@@ -1112,11 +1506,16 @@ The Idea / The Details
 
 @media (max-width: 580px) {
   .analysis-table {
-    margin-left: -2em;
+    margin-left: -4em;
+  }
+
+  .analysis-table p {
+    font-size: .8rem !important;
   }
 
   .box-heading {
     font-size: .7rem;
+    font-weight: bold;
   }
 
   .table-box p {
@@ -1125,10 +1524,6 @@ The Idea / The Details
 
   .analysis-table img {
     width: 46px;
-  }
-
-  .productive {
-    font-size: .2rem !important;
   }
 }
 
