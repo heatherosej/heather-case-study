@@ -6,11 +6,10 @@
   font-family: 'TradeGothicLTStd-Extended';
   src: url('../font/TradeGothicLTStd-Extended/font.woff2') format('woff2'), url('../font/TradeGothicLTStd-Extended/font.woff') format('woff');
 }
-
 @font-face {
-    font-family: OCR_A_Std_Regular;
-    src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
-  }
+  font-family: OCR_A_Std_Regular;
+  src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
+}
 
 
 html, body{
@@ -34,7 +33,7 @@ position: fixed;
 top: 0;
 background-color: black;
 display: flex;
-width: 101vw;
+/* width: 101vw; */
 transform: rotate(-2deg) translateY(-30px);
 max-height: 140px;
 margin-top:-10px;
@@ -117,7 +116,7 @@ margin-left: 11px;
   background-color: white;
   justify-content: space-around;
   margin-top: 8em;
-  width: 100vw; 
+  /* width: 100vw;  */
   max-height: 860px; 
 } 
 .mobileFlex{
@@ -243,7 +242,7 @@ h3 {
 
 .wrapper {
     display: grid;
-    width: 101vw;
+    /* width: 101vw; */
     grid-template-columns: repeat(10, [col] 10% ) ;
     grid-template-rows: repeat(3, [row] auto  );
     column-gap: -5px;
@@ -253,7 +252,7 @@ h3 {
     color: #444;
     position: relative;
     margin: -5px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding: -3px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   }
@@ -363,30 +362,58 @@ h3 {
 .wrapperMobile{
   display: none;
 }
-
+/*
 .morestuff{
-    background-color: black;
-    text-align: center;
-    width: 101vw;
-    margin-left: -10px;
-    margin-top: -30px; 
-    color: white;
-    font-family: 'TradeGothicLTStd-Extended', sans-serif;
-    font-size: 20px;
-    line-height: 3em;
-    padding-top: 10px;
-  }
-.morestuff a{
-    text-decoration: none;
-    color: white;
-    padding-top: 200px;
-  }   
+  background-color: black;
+  text-align: center;
+  width: 101vw;
+  margin-left: -10px;
+  margin-top: -30px; 
+  color: white;
+  font-family: 'TradeGothicLTStd-Extended', sans-serif;
+  font-size: 20px;
+  line-height: 3em;
+  padding-top: 10px;
+}
+*/
+
+.morestuffs {
+  background-color: black;
+  font-family: 'TradeGothicLTStd-Extended', sans-serif;
+  font-size: 20px;
+  line-height: 3em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.morestuffs a {
+  text-decoration: none;
+  color: white;
+} 
+.morestuffs i {
+  transition: all 0.5s ease;
+}
+.morestuffs a:hover i {
+  transform: translateX(15px);
+}
+.morestuffs::after {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 100%;
+}
+
 .xy {
     position: relative;
     bottom: 0;
     margin-bottom: -3px;
-   }
+}
 
+/*
 .footer {
 background-color:#FCB140;
 display: flex;
@@ -413,9 +440,11 @@ margin-top: 20px;;
 margin-right: 40px; 
 padding-bottom: 20px; 
 }
+*/
 
 @media only screen and (max-width: 825px){
-#all-nav{
+/*
+  #all-nav{
 justify-content: space-between;
 }
 
@@ -465,6 +494,7 @@ display: block;
 z-index: 998;
 margin-right: 50px;
 } 
+*/
 
 .mobileFlex{
   display: flex;
@@ -512,7 +542,7 @@ margin-right: 50px;
 }
 
 .morestuff {
-width: 100vw;
+/* width: 100vw; */
 margin: 0;
 }
 
@@ -520,7 +550,7 @@ margin: 0;
 display:flex;
 flex-direction: column;
 align-items: flex-start;
-width: 100vw;
+/* width: 100vw; */
 margin: 0;
 /* margin-right: -20px; */
 }
@@ -557,6 +587,28 @@ padding-bottom: 20px;
 /* closing bracket for media query -- don't delete */
 }
 
+.acc-title {
+  cursor: pointer;
+}
+.acc-content {
+  max-height: 500vmax;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.acc-title::after {
+  content: '\f068';
+  color: red;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  float: right;
+}
+.acc-active::after { 
+  content: '\f067'; 
+}
+
+.acc-active + .acc-content {
+  max-height: 0;
+}
 
 /*
 ========================
@@ -930,7 +982,7 @@ The Idea / The Details
   font-size: 20px !important;
 }
 
-.lightbox {
+.lightboxs {
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -938,13 +990,13 @@ The Idea / The Details
   margin-top: 3em;
 }
 
-.lightbox span {
+.lightboxs span {
   display: block;
   font-size: 20px;
   margin: 1em 0;
 }
 
-.lightbox img {
+.lightboxs img {
   width: 100%;
   max-width: 415px;
   height: 298px;
@@ -1261,7 +1313,7 @@ The Idea / The Details
 /*******************************/
 
 @media (max-width: 1310px) {
-  .lightbox {
+  .lightboxs {
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -1500,11 +1552,11 @@ The Idea / The Details
     margin-left: 2em;
   }
 
-  .lightbox {
+  .lightboxs {
     margin-left: 0 1em;
   }
 
-  .lightbox img {
+  .lightboxs img {
     width: 100%;
   }
 }
