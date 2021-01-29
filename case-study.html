@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="./CSS/header-footer.css" />
   <link href="./CSS/Style-7b.css" rel="stylesheet" type="text/css" />
   <!-- <link href="./CSS/style_1440.css" rel="stylesheet" type="text/css" /> -->
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" 
+  integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" 
+  crossorigin="anonymous" 
+  />
   <script src="https://kit.fontawesome.com/c304a9fe94.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
@@ -142,15 +148,15 @@
   <!-- End The Problem -->
 
   <!-- The Data -->
-  <section class="the-problem">
+  <section class="the-problem accordion">
     <div class="the-problem-content container">
-      <span class="task-buddy-h1">The Data
-        <span class="open-btn"><img src="./Images/expand.png" alt=""></span>
-        <span class="close-btn"><img src="./Images/Collapse.png" alt=""></span>
+      <span class="task-buddy-h1 acc-title">The Data
+        <!-- <span class="open-btn"><img src="./Images/expand.png" alt=""></span> -->
+        <!-- <span class="close-btn"><img src="./Images/Collapse.png" alt=""></span> -->
       </span>
 
       <!-- collapsible-content-container -->
-      <div class="collapsible-content">
+      <div class="collapsible-content acc-content">
         <div class="container-child">
           <p class="container-p">
             We conducted a survey with 35 responses to gain quantitative insight into productivity, motivation and gaming.
@@ -193,17 +199,23 @@
             hands-on experience interviewing.
           </div>
           <!-- lightbox -->
-          <div class="lightbox">
+          <div class="lightboxs">
             <div class="diagram">
-              <img src="./Images/Affinity-TB 2.jpg" alt="">
+              <a href="./Images/Affinity-TB 2.jpg" data-lightbox="image-1" data-title="Affinity Map">
+                <img src="./Images/Affinity-TB 2.jpg" alt="Gallery image 1">
+              </a>
               <span>Affinity Map</span>
             </div>
             <div class="diagram">
-              <img src="./Images/Empathy-TB 1.jpg" alt="">
+              <a href="./Images/Empathy-TB 1.jpg" data-lightbox="image-1" data-title="Empathy Map">
+                <img src="./Images/Empathy-TB 1.jpg" alt="Gallery image 1">
+              </a>
               <span>Empathy Map</span>
             </div>
             <div class="diagram">
-              <img src="./Images/UserPersona-TB.png" alt="">
+              <a href="./Images/UserPersona-TB.png" data-lightbox="image-1" data-title="User Persona">
+                <img src="./Images/UserPersona-TB.png" alt="Gallery image 1">
+              </a>
               <span>User Persona</span>
             </div>
           </div>
@@ -418,7 +430,7 @@
             the connection to the avatar. Using dot voting, we decided on the top features to include and made a prioritization matrix.
           </p>
           <!-- lightbox -->
-          <div class="lightbox">
+          <div class="lightboxs">
             <div class="diagram">
               <img src="./Images/TB-brainstormCrop2.png" alt="">
               <span>My Mind Map</span>
@@ -465,11 +477,19 @@
   </footer>
   <!--  -->
   <script 
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+  crossorigin="anonymous"
   ></script>
+
+  <script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" 
+  integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" 
+  crossorigin="anonymous"
+  ></script>
+  <!--  -->
   <script src="./Javascript/menu-script.js"></script>
+  <script src="./Javascript/accordion.js"></script>
 </body>
 
 </html>
