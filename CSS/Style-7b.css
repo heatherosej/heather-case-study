@@ -11,7 +11,6 @@
   src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
 }
 
-
 html, body{
   margin: 0;
   padding: 0;
@@ -613,10 +612,19 @@ padding-bottom: 20px;
 
 body p {
   font-size: 20px !important;
-  letter-spacing: 1px;
-  line-height: 25.6px;
-  font-weight: 300;
-  margin-bottom: 1.7em;
+  font-family: Work-sans !important;
+  letter-spacing: 1px !important;
+  font-weight: 300 !important;
+  margin-bottom: 1.5em !important;
+  line-height: 25px !important;
+  letter-spacing: 0em !important;
+}
+
+p > .strong {
+  font-family: work-sans;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
 }
 
 .strong {
@@ -630,8 +638,13 @@ body p {
 }
 
 .task-buddy-h1 {
+  font-family: Trade Gothic LT Std;
   font-size: 36px !important;
-  height: 60px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  display: block;
+  margin-bottom: 1em !important;
 }
 
 .task-buddy-h2 {
@@ -663,10 +676,6 @@ body p {
   line-height: 4em;
 }
 
-.btn-primary:active, .btn-warning:active, .btn-disabled:active {
-  outline: none;
-}
-
 /* primary button */
 
 .btn-primary {
@@ -677,7 +686,7 @@ body p {
   background: #D9FCF1;
 }
 
-.btn-primary:active {
+.btn-primary:active, .btn-danger:active {
   box-shadow: 5px 5px 1px #FABD3F;
 }
 
@@ -735,22 +744,25 @@ body p {
 
 .task-buddy-text {
   background: #BEE1D6;
-  max-width: 85%;
+  max-width: 87%;
+  height: 57px;
   min-width: auto;
   display: block;
   word-wrap: break-word;
-  padding-left: 1em;
+  padding-left: .9em;
+  line-height: 56px;
 }
 
 .task-buddy-floating-text {
   position: absolute;
-  top: 2em;
-  right: 4em;
-  max-width: 540px;
+  top: 1.5em;
+  right: 3.5em;
+  max-width: 510px;
   background: #fff;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 27px;
+  padding-right: 27px;
   border: 5px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
   font-family: OCR A Std;
@@ -771,7 +783,7 @@ The Idea / The Details
 
 .container-child {
   padding: 0 2.3em;
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 
 .max-width-1130 {
@@ -779,21 +791,21 @@ The Idea / The Details
 }
 
 .container-p {
-  letter-spacing: 1px !important;
+  /* letter-spacing: 1px !important;
   line-height: 25.6px !important;
   font-weight: 300 !important;
   margin-bottom: 1.7em !important;
-  font-size: 16px !important;
+  font-size: 16px !important; */
 }
 
 .theIdea-section-content {
   display: flex;
   justify-content: space-between;
-  gap: 3em;
+  /* gap: 3em; */
 }
 
 .the-idea {
-  width: 64%;
+  width: 65%;
 }
 
 .the-idea p {
@@ -809,7 +821,9 @@ The Idea / The Details
 .the-details {
   min-width: 30%;
   padding-left: 3em;
-  border-left: 1px dashed #000;
+  /* border-left: 1px dashed #000; */
+  background-image: url('../Images/Line_7.png');
+  background-repeat: repeat-y;
 }
 
 .team {
@@ -822,14 +836,34 @@ The Idea / The Details
   font-weight: 400;
 }
 
-.the-details .theDetails-heading, .theDetails-title {
-  font-size: 22px;
-  font-family: 'OCR_A_Std_Regular';
+.the-details span:nth-child(3), .the-details span:nth-child(4) {
+  display: inline-block;
 }
 
-.the-details .theDetails-description {
+.the-details span:nth-child(4) {
+  margin-left: .5em;
+}
+
+
+
+.the-details .theDetails-heading, .theDetails-title {
+  font-family: 'OCR_A_Std_Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+.theDetails-description {
   font-size: 16px;
-  margin-bottom: 1em;
+  font-style: normal;
+  line-height: 40px;
+  margin-left: 2em;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: 'Work-Sans', sans-serif;
+  font-weight: 400 !important;
 }
 
 .info-bar {
