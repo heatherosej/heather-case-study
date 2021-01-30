@@ -11,6 +11,8 @@
   src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
 html, body{
   margin: 0;
   padding: 0;
@@ -650,9 +652,12 @@ p > .strong {
 .task-buddy-h2 {
   font-family: ocr-a-std, monospace;
   font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 24px !important;
-  /* background: #000 !important; */
+  font-family: OCR-A-Std;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+
 }
 
 .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
@@ -783,7 +788,7 @@ The Idea / The Details
 
 .container-child {
   padding: 0 2.3em;
-  /* padding-right: 0; */
+  padding-right: 0;
 }
 
 .max-width-1130 {
@@ -821,7 +826,6 @@ The Idea / The Details
 .the-details {
   min-width: 30%;
   padding-left: 3em;
-  /* border-left: 1px dashed #000; */
   background-image: url('../Images/Line_7.png');
   background-repeat: repeat-y;
 }
@@ -844,8 +848,6 @@ The Idea / The Details
   margin-left: .5em;
 }
 
-
-
 .the-details .theDetails-heading, .theDetails-title {
   font-family: 'OCR_A_Std_Regular';
   font-style: normal;
@@ -862,8 +864,9 @@ The Idea / The Details
   margin-left: 2em;
   letter-spacing: 0em;
   text-align: left;
-  font-family: 'Work-Sans', sans-serif;
-  font-weight: 400 !important;
+  font-size: 16px;
+  font-weight: 400;
+  /* font-family: 'Work Sans', sans-serif; */
 }
 
 .info-bar {
@@ -876,16 +879,22 @@ The Idea / The Details
 
 
 .info-bar p {
+  font-family: TradeGothicLTStd-BoldExt !important;
   font-size: 24px !important;
-  font-weight: 600;
-  line-height: 28px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 29px !important;
+  letter-spacing: 0em !important;
 }
 
 .info-bar span {
   display: block;
-  margin-top: -1em;
+  margin-top: -2em;
+  padding-bottom: .5em;
   font-size: 20px;
-  font-weight: 400;
+  letter-spacing: .75px;
+  font-weight: 300 !important;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*
@@ -896,12 +905,16 @@ The Idea / The Details
 
 .the-problem-content {
   position: relative;
+  margin-top: 4em;
 }
 
 .the-problem-description {
-  font-family: 'TradeGothicLTStd-Extended';
+  font-family: 'TradeGothicLTStd-Extended' !important;
   font-size: 24px !important;
-  margin-bottom: 1em;
+  font-weight: 400 !important;
+  line-height: 35px !important;
+  letter-spacing: 0em;
+  margin-bottom: .5em !important;
 }
 
 .the-problem-content p {
@@ -909,7 +922,8 @@ The Idea / The Details
 }
 
 .the-problem-details {
-  margin-bottom: 3em;
+  margin-bottom: 3.5em !important;
+  /* border: 1px solid #000; */
 }
 
 .hypothesis-section {
@@ -920,7 +934,7 @@ The Idea / The Details
 .hypothesis-section .orange-box {
   border: 10px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
-  margin-top: 2em;
+  margin-top: 3em;
   max-width: 465px;
   align-self: flex-start;
 }
@@ -942,15 +956,15 @@ The Idea / The Details
 
 #special {
   font-size: 16px !important;
-  font-family: OCR_A_Std_Regular;
+  font-family: OCR_A_Std_Regular !important;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0;
 }
 
 .short-p {
-  max-width: 90%;
-  margin-right: 1em;
+  margin-right: 2em;
+  margin-bottom: 0 !important;
 }
 
 .info-icon {
@@ -1106,6 +1120,7 @@ The Idea / The Details
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
+  background: #000 !important;
 }
 
 .the-content-strategy h2{
