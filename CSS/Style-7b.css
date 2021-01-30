@@ -11,6 +11,7 @@
   src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 html, body{
   margin: 0;
@@ -613,10 +614,19 @@ padding-bottom: 20px;
 
 body p {
   font-size: 20px !important;
-  letter-spacing: 1px;
-  line-height: 25.6px;
-  font-weight: 300;
-  margin-bottom: 1.7em;
+  font-family: Work-sans !important;
+  letter-spacing: 1px !important;
+  font-weight: 300 !important;
+  margin-bottom: 1.5em !important;
+  line-height: 25px !important;
+  letter-spacing: 0em !important;
+}
+
+p > .strong {
+  font-family: work-sans;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
 }
 
 .strong {
@@ -630,16 +640,24 @@ body p {
 }
 
 .task-buddy-h1 {
+  font-family: Trade Gothic LT Std;
   font-size: 36px !important;
-  height: 60px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  display: block;
+  margin-bottom: 1em !important;
 }
 
 .task-buddy-h2 {
   font-family: ocr-a-std, monospace;
   font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 24px !important;
-  /* background: #000 !important; */
+  font-family: OCR-A-Std;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+
 }
 
 .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
@@ -655,16 +673,12 @@ body p {
 }
 
 .btn-primary:focus, .btn-warning:focus, .btn-danger:focus {
-  outline: 5px solid #49A0DF;
+  outline: none;
 }
 
 .btn-disabled, .btn-disabled:hover, .btn-disabled:focus  {
   background: #e4e4e4 !important;
   line-height: 4em;
-}
-
-.btn-primary:active, .btn-warning:active, .btn-disabled:active {
-  outline: none;
 }
 
 /* primary button */
@@ -677,7 +691,7 @@ body p {
   background: #D9FCF1;
 }
 
-.btn-primary:active {
+.btn-primary:active, .btn-danger:active {
   box-shadow: 5px 5px 1px #FABD3F;
 }
 
@@ -710,6 +724,14 @@ body p {
   outline: none;
 }
 
+.task-buddy-wrapper {
+  width: 100%;
+}
+
+.content {
+  margin: 0 3em;
+}
+
 .task-buddy{
   background: #aaa;
   min-height: 600px;
@@ -719,31 +741,39 @@ body p {
   overflow: hidden;
 }
 
-.task-buddy-content{
-  margin: 200px 3em;
+.task-buddy .content{
+  margin-top: 200px;
+  margin-bottom: 40px;
   position: relative;
 }
 
 .task-buddy-text {
   background: #BEE1D6;
-  max-width: 85%;
+  max-width: 87%;
+  height: 57px;
   min-width: auto;
   display: block;
   word-wrap: break-word;
-  padding-left: 1em;
+  padding-left: .9em;
+  line-height: 56px;
 }
 
 .task-buddy-floating-text {
   position: absolute;
-  top: 2em;
-  right: 4em;
-  max-width: 570px;
-  font-size: 20px;
+  top: 1.5em;
+  right: 3.5em;
+  max-width: 510px;
   background: #fff;
-  padding: 1em 2em;
-  border: 10px solid #EB9893;
-  font-family: OCR_A_Std_Regular;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 5px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
+  font-family: OCR A Std;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 /*
@@ -766,21 +796,21 @@ The Idea / The Details
 }
 
 .container-p {
-  letter-spacing: 1px !important;
+  /* letter-spacing: 1px !important;
   line-height: 25.6px !important;
   font-weight: 300 !important;
   margin-bottom: 1.7em !important;
-  font-size: 16px !important;
+  font-size: 16px !important; */
 }
 
 .theIdea-section-content {
   display: flex;
   justify-content: space-between;
-  gap: 3em;
+  /* gap: 3em; */
 }
 
 .the-idea {
-  width: 64%;
+  width: 65%;
 }
 
 .the-idea p {
@@ -796,7 +826,8 @@ The Idea / The Details
 .the-details {
   min-width: 30%;
   padding-left: 3em;
-  border-left: 1px dashed #000;
+  background-image: url('../Images/Line_7.png');
+  background-repeat: repeat-y;
 }
 
 .team {
@@ -809,14 +840,33 @@ The Idea / The Details
   font-weight: 400;
 }
 
-.the-details .theDetails-heading, .theDetails-title {
-  font-size: 22px;
-  font-family: 'OCR_A_Std_Regular';
+.the-details span:nth-child(3), .the-details span:nth-child(4) {
+  display: inline-block;
 }
 
-.the-details .theDetails-description {
+.the-details span:nth-child(4) {
+  margin-left: .5em;
+}
+
+.the-details .theDetails-heading, .theDetails-title {
+  font-family: 'OCR_A_Std_Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+.theDetails-description {
   font-size: 16px;
-  margin-bottom: 1em;
+  font-style: normal;
+  line-height: 40px;
+  margin-left: 2em;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  /* font-family: 'Work Sans', sans-serif; */
 }
 
 .info-bar {
@@ -829,16 +879,22 @@ The Idea / The Details
 
 
 .info-bar p {
+  font-family: TradeGothicLTStd-BoldExt !important;
   font-size: 24px !important;
-  font-weight: 600;
-  line-height: 28px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 29px !important;
+  letter-spacing: 0em !important;
 }
 
 .info-bar span {
   display: block;
-  margin-top: -1em;
+  margin-top: -2em;
+  padding-bottom: .5em;
   font-size: 20px;
-  font-weight: 400;
+  letter-spacing: .75px;
+  font-weight: 300 !important;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*
@@ -849,12 +905,16 @@ The Idea / The Details
 
 .the-problem-content {
   position: relative;
+  margin-top: 4em;
 }
 
 .the-problem-description {
-  font-family: 'TradeGothicLTStd-Extended';
+  font-family: 'TradeGothicLTStd-Extended' !important;
   font-size: 24px !important;
-  margin-bottom: 1em;
+  font-weight: 400 !important;
+  line-height: 35px !important;
+  letter-spacing: 0em;
+  margin-bottom: .5em !important;
 }
 
 .the-problem-content p {
@@ -862,7 +922,8 @@ The Idea / The Details
 }
 
 .the-problem-details {
-  margin-bottom: 3em;
+  margin-bottom: 3.5em !important;
+  /* border: 1px solid #000; */
 }
 
 .hypothesis-section {
@@ -873,7 +934,7 @@ The Idea / The Details
 .hypothesis-section .orange-box {
   border: 10px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
-  margin-top: 2em;
+  margin-top: 3em;
   max-width: 465px;
   align-self: flex-start;
 }
@@ -895,15 +956,15 @@ The Idea / The Details
 
 #special {
   font-size: 16px !important;
-  font-family: OCR_A_Std_Regular;
+  font-family: OCR_A_Std_Regular !important;
   line-height: 30px;
   font-weight: 400;
   letter-spacing: 0;
 }
 
 .short-p {
-  max-width: 90%;
-  margin-right: 1em;
+  margin-right: 2em;
+  margin-bottom: 0 !important;
 }
 
 .info-icon {
@@ -1059,6 +1120,7 @@ The Idea / The Details
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
+  background: #000 !important;
 }
 
 .the-content-strategy h2{
@@ -1531,7 +1593,7 @@ The Idea / The Details
 }
 
 @media (max-width: 460px) {
-  .task-buddy-content {
+  .task-buddy .content {
     margin: 200px 1em;
   }
 
