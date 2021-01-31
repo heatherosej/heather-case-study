@@ -655,7 +655,7 @@ p > .strong {
 }
 
 .task-buddy-h1 {
-  font-family: Trade Gothic LT Std;
+  font-family: TradeGothicLTStd-boldExt;
   font-size: 36px !important;
   font-weight: 700;
   line-height: 43px;
@@ -665,10 +665,6 @@ p > .strong {
 }
 
 .task-buddy-h2 {
-  /* font-family: OCR_A_Std_Regular; */
-  /* font-style: normal !important; */
-  /* font-family: OCR-A-Std; */
-  border: 1px solid #000 !important;
   font-size: 24px;
   font-weight: 400;
   line-height: 42px;
@@ -678,7 +674,7 @@ p > .strong {
 
 .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
   padding: 1em 2.5em;
-  font-family: OCR A Std;
+  font-family: OCR_A_Std_Regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -771,7 +767,7 @@ p > .strong {
   display: block;
   word-wrap: break-word;
   padding-left: .9em;
-  line-height: 56px;
+  line-height: 60px;
 }
 
 .task-buddy-floating-text {
@@ -786,7 +782,7 @@ p > .strong {
   padding-right: 27px;
   border: 5px solid #EB9893;
   box-shadow: 0 0 0px 1px #444444, inset 0 0 0px 1px #444444;
-  font-family: OCR A Std;
+  font-family: OCR_A_Std_Regular;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0em;
@@ -827,6 +823,7 @@ The Idea / The Details
 
 .the-idea {
   width: 65%;
+  padding-right: 2em;
 }
 
 .the-idea p {
@@ -1006,7 +1003,7 @@ The Idea / The Details
 }
 
 .data-percentages p {
-  font-family: ocr a std;
+  font-family: OCR_A_Std_Regular;
   font-weight: 400;
   font-size: 16px !important;
 }
