@@ -293,9 +293,9 @@ h3 {
   }
   
   h2 {
-  position: relative;
+    position: relative;
     z-index:1;
-    font-family: ocr-a-std, monospace;
+    font-family: OCR_A_Std_Regular;
     font-style: normal;
     font-size: 24px;
     margin-top: 1.5em;
@@ -650,9 +650,10 @@ p > .strong {
 }
 
 .task-buddy-h2 {
-  font-family: ocr-a-std, monospace;
-  font-style: normal !important;
-  font-family: OCR-A-Std;
+  /* font-family: OCR_A_Std_Regular; */
+  /* font-style: normal !important; */
+  /* font-family: OCR-A-Std; */
+  border: 1px solid #000 !important;
   font-size: 24px;
   font-weight: 400;
   line-height: 42px;
