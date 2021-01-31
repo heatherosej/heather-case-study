@@ -992,6 +992,10 @@ The Idea / The Details
 ========================
 */
 
+.the-data  .task-buddy-h1{
+  margin-bottom: .5em !important;
+}
+
 .data-percentages {
   width: 100%;
   display: flex;
@@ -1003,17 +1007,25 @@ The Idea / The Details
 }
 
 .data-percentages p {
-  font-family: OCR_A_Std_Regular;
-  font-weight: 400;
+  font-family: OCR_A_Std_Regular !important;
+  font-weight: 400 !important;
   font-size: 16px !important;
+  line-height: 26px !important;
+  letter-spacing: 0em !important;
 }
 
 .report {
   display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 .report img {
   object-fit: contain;
+}
+
+.the-problem-description b {
+/* letter-spacing: 0em; */
 }
 
 .open-btn img, .close-btn img{
@@ -1073,16 +1085,19 @@ The Idea / The Details
   border: 1px solid #000;
 }
 
+.identifying-user .lightboxs {
+  margin-top: 4em;
+}
+
 .info-bar-people {
   width: auto;
   padding: 0 1em;
-  padding-bottom: 1px;
   margin: 0;
   margin-right: .5em;
 }
 
 .how-might-we {
-  margin: 4em 0;
+  margin-top: -2.2em;
 }
 
 .how-might-we h2 {
@@ -1096,14 +1111,14 @@ The Idea / The Details
 }
 
 .how-might-we ul li {
-  margin-bottom: 1.5em !important;
+  margin-bottom: 1.3em !important;
   list-style-type: circle;
   font-size: 20px !important;
-  letter-spacing: 1px;
   line-height: 25.6px;
   font-weight: 300;
   list-style-image: url('../Images/Ellipse_1.png');
   padding-left: .5em;
+  letter-spacing: 0em;
 }
 
 /*
@@ -1289,6 +1304,10 @@ The Idea / The Details
   border: none;
   max-width: 100%;
   object-fit: contain;
+}
+
+.diagram span {
+  letter-spacing: 0em;;
 }
 
 /*
