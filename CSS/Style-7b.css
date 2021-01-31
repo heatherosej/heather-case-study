@@ -804,7 +804,7 @@ The Idea / The Details
 }
 
 .max-width-1130 {
-    max-width: 85%;
+    max-width: 90%;
 }
 
 .container-p {
@@ -1127,9 +1127,8 @@ The Idea / The Details
 ========================
 */
 
-.the-content-strategy p {
-  font-size: 20px !important;
-  /* background: #000; */
+.the-content-strategy .task-buddy-h1 {
+  margin-bottom: 0 !important;
 }
 
 .the-content-strategy .the-problem-description {
@@ -1148,7 +1147,6 @@ The Idea / The Details
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
-  background: #000 !important;
 }
 
 .the-content-strategy h2{
@@ -1156,19 +1154,40 @@ The Idea / The Details
 }
 
 .analysis-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 90%;
   margin-top: 4em;
   margin-bottom: 5.5em;
+  border-collapse: collapse;
 }
+
+.hidden-table {
+  display: none;
+}
+
+.top-heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.top-heading-container img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.icns {
+  margin: 1em;
+}
+
+.analysis-table tr, td, th {
+  border: 1px solid #A19E9E;
+  text-align: center;
+} 
 
 .analysis-table p {
   text-align: center;
-}
-
-.analysis-table-second {
-  display: none;
-  margin-top: -4em;
+  padding: 0 1em;
 }
 
 .table-box {
@@ -1180,16 +1199,6 @@ The Idea / The Details
   padding: 1em 0;
 }
 
-.table-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.table-header img {
-  max-height: 80px;
-}
-
 .table-header span:not(.box-different) {
   margin-top: 1em;
 }
@@ -1198,17 +1207,23 @@ The Idea / The Details
   text-align: center;
 }
 
+.heading {
+  width: 20%;
+}
+
 .box-heading {
   font-family: OCR_A_Std_Regular;
   font-weight: 400;
   font-size: 15.61px;
   line-height: 27.51px;
-  text-align: center;
-  margin: 0 1em;
+  padding: 0 1em;
 }
 
-.table-box p {
-  margin: 0 1em;
+.telda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
 }
 
 .telda img{
@@ -1443,6 +1458,16 @@ The Idea / The Details
   }
 }
 
+@media (max-width: 1135px) {
+  .shown-table {
+    display: none;
+  }
+
+  .hidden-table {
+    display: initial;
+  }
+}
+
 @media (max-width: 1130px) {
   .task-buddy-floating-text {
     top: 3em;
@@ -1516,7 +1541,7 @@ The Idea / The Details
 
 @media (max-width: 745px) {
   .analysis-table {
-    margin-left: -2em;
+    /* margin-left: -2em; */
   }
 
   .box-different {
@@ -1595,7 +1620,8 @@ The Idea / The Details
 
 @media (max-width: 580px) {
   .analysis-table {
-    margin-left: -4em;
+    margin-left: 0;
+    background: #000 !important;
   }
 
   .analysis-table p {
