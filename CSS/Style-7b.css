@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: OCR_A_Std_Regular;
-  src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf');
+  src: url('../font/OCR_A_Std_Regular/OCR_A_Std_Regular.ttf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
