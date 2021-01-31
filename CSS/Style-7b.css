@@ -1156,6 +1156,7 @@ The Idea / The Details
 }
 
 .analysis-table {
+  max-width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 4em;
@@ -1516,7 +1517,7 @@ The Idea / The Details
 
 @media (max-width: 745px) {
   .analysis-table {
-    margin-left: -2em;
+    /* margin-left: -2em; */
   }
 
   .box-different {
@@ -1595,7 +1596,8 @@ The Idea / The Details
 
 @media (max-width: 580px) {
   .analysis-table {
-    margin-left: -4em;
+    margin-left: 0;
+    background: #000 !important;
   }
 
   .analysis-table p {
