@@ -57,14 +57,14 @@ header .web-layout {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    z-index: 9990;
+    /* z-index: 9990; */
 }
 .navbar a { color: #ffffff; }
 .navbar a:hover { color: #BEE1D6; }
 .navbar a:not(i) { 
     font-family: ballinger-mono, sans-serif; 
     font-size: 15px;
-    /* font-weight: 300; */
+    font-weight: 300;
 }
 .navbar i { font-size: 25px; }
 .main-links,
@@ -77,10 +77,10 @@ header .web-layout {
 .main-links li:not(:last-child) { margin-right: 1em; }
 .h-contact-links li:not(:first-child) { margin-left: 1em; }
 .h-contact-links a:not(#resume) { font-size: 25px; }
+/* display: flex; */
 .menu-btn {
     color: #BEE1D6;
     font-size: 36px;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     z-index: 9991;
@@ -170,7 +170,7 @@ footer .web-layout {
     z-index: 9990;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 650px) {
     footer::before {
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     }
