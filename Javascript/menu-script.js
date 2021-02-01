@@ -1,4 +1,4 @@
-const allEvents = ['click', 'keyup', 'resize'];
+const allEvents = ['mouseup', 'keyup', 'resize'];
 allEvents.forEach(listener => window.addEventListener(listener, handleEvents))
 
 function toggleNavMenu () {
@@ -19,9 +19,9 @@ function handleEvents (e) {
     const isClickedOutside = e.target !== window && !navBar.contains(e.target);
     const [ESCAPE, DESKTOP] = [27, 650];
 
-    if (e.type === 'click' && notOpen && !isActive) return toggleNavMenu();
+    if (e.type === 'mouseup' && notOpen && !isActive) return toggleNavMenu();
     if (!isActive) return;
-    if (e.type === 'click' && isClickedOutside) return toggleNavMenu();
+    if (e.type === 'mouseup' && isClickedOutside) return toggleNavMenu();
     if (e.type === 'keyup' && e.keyCode === ESCAPE) return toggleNavMenu();
     if (e.type === 'resize' && window.innerWidth >= DESKTOP) return toggleNavMenu();
 }
