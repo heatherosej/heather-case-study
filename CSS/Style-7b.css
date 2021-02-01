@@ -613,13 +613,24 @@ padding-bottom: 20px;
   transition: transform 0.4s ease;
 }
 .acc-content {
-  /* max-height: 500vmax; */
+  max-height: 1000em;
   overflow: hidden;
   transition: max-height 1s ease;
 }
 .acc-hide img {
   transform: rotate(-90deg);
 }
+
+/*
+========================
+      Lightbox Adjust
+========================
+*/
+
+.lb-nav a.lb-prev { opacity: 0.3 !important; }
+.lb-nav a.lb-next { opacity: 0.3 !important; }
+.lb-nav a.lb-prev:hover { opacity: 1 !important; }
+.lb-nav a.lb-next:hover { opacity: 1 !important; }
 
 /*
 ========================
