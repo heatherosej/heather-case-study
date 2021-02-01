@@ -822,7 +822,7 @@ The Idea / The Details
 }
 
 .the-idea {
-  width: 65%;
+  width: 80%;
   padding-right: 2em;
 }
 
@@ -843,6 +843,11 @@ The Idea / The Details
   background-repeat: repeat-y;
 }
 
+.project-info {
+  display: flex;
+}
+
+
 .team {
   display: flex;
   gap: 1em;
@@ -859,6 +864,20 @@ The Idea / The Details
 
 .the-details span:nth-child(4) {
   margin-left: .5em;
+}
+
+.theDetails-title {
+  min-width: 150px;
+}
+
+.the-details-desc {
+  font-family: work-sans, sans-serif;
+  font-size: 20px !important;
+  letter-spacing: 0em !important;
+  line-height: 25px !important;
+  margin-bottom: .5em;
+  margin-top: .4em;
+  width: 60%;
 }
 
 .the-details .theDetails-heading, .theDetails-title {
@@ -993,7 +1012,11 @@ The Idea / The Details
 */
 
 .the-data  .task-buddy-h1{
-  margin-bottom: .5em !important;
+  margin-bottom: 0 !important;
+}
+
+.data-desc {
+  margin-top: 2em;
 }
 
 .data-percentages {
@@ -1317,8 +1340,8 @@ The Idea / The Details
 
 .task-flow .lightbox .diagram img {
   border: none;
-  max-width: 100%;
-  object-fit: contain;
+  width: 100%;
+  /* object-fit: contain; */
 }
 
 .diagram span {
