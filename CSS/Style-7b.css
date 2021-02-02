@@ -966,6 +966,7 @@ The Idea / The Details
 
 .the-problem-details {
   margin-bottom: 3.5em !important;
+  margin-right: 1em;
   /* border: 1px solid #000; */
 }
 
@@ -1122,6 +1123,11 @@ The Idea / The Details
   margin-top: 4em;
 }
 
+.identifying-user .lightboxs img {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2
+  );
+}
+
 .info-bar-people {
   width: auto;
   padding: 0 1em;
@@ -1264,9 +1270,28 @@ The Idea / The Details
   height: auto;
 }
 
+.brainstorming h2{
+  margin-top: 2.3em;
+  margin-bottom: 1.5em;
+}
+
+.brain-gallery {
+  margin-top: 4em;
+}
+
+.brain-gallery img {
+  
+}
+
 .value-prop {
   width: 100%;
   margin-left: -2.3em;
+  
+}
+
+.value-prop-p p {
+  margin: 1em 0 !important;
+  margin-bottom: 2em !important;
 }
 
 .value-prop span{
@@ -1346,24 +1371,32 @@ The Idea / The Details
   margin-bottom: 1em;
 }
 
-.task-flow .lightbox .diagram {
-  width: 50%;
-  gap: 2em;
-  box-sizing: border-box;
-}
-
-.task-flow .lightbox .diagram img {
-  border: none;
-  width: 100%;
-  /* object-fit: contain; */
-}
-
 .taskflow-img-box {
-  border: 1px solid #000;
+  display: flex;
 }
 
-.taskflow-img-box img {
+.task-flow h2 {
+  margin-bottom: 70px;
+}
+
+.taskflow-img-box .diagram {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
+  max-width: 550px;
+}
+
+.taskflow-img-box .diagram:last-child {
+  margin-left: 7em;
+  max-width: 447px;
+}
+
+.taskflow-img-box .diagram p {
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 3em !important;
 }
 
 .diagram span {
@@ -1375,6 +1408,20 @@ The Idea / The Details
   The Product Design
 ========================
 */
+
+.w-h2{
+  margin-top: .5em !important;
+  margin-bottom: 0 !important;
+}
+
+.wireframes-gallery {
+  margin-bottom: 8em;
+  margin-left: -2em;
+}
+
+.wireframes-gallery .diagram:nth-child(2) img{
+  border: none;
+}
 
 .the-product-design .lightbox {
   gap: 2em;
@@ -1390,8 +1437,15 @@ The Idea / The Details
   gap: 5em;
 }
 
+.low-fi-section {
+  margin-left: -2em;
+}
+
+.low-fidelity h2 {
+  margin-bottom: 1em !important;
+}
+
 .low-fidelity-right p {
-  /* max-width: 85%; */
   text-align: left;
 }
 
@@ -1441,16 +1495,17 @@ The Idea / The Details
 
 .phone-demos {
   margin: 6em 0;
-  padding: 1em;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -2em;
   gap: 2em;
   justify-content: space-around;
 }
 
 .phone-demos img {
-  width: 300px;
+  width: 276px;
+  object-fit: contain;
 }
 
 
