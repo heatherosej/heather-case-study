@@ -180,20 +180,21 @@ margin-left: 11px;
   margin: 25px 0px 100px 20px;
   width: 20em;
 }
-.myface{
+.myface {
   display: block;
 }
 #face {
   width: 100%;
-  min-width: 175pX;
+  min-width: 175px;
   max-width: 350px;
   height: auto;  
   margin-left: 10px;
-  z-index: -1;}
+  z-index: -1;
+}
 
 #name {
-  font-size: 30px;
-  font-family: 'TradeGothicLTStd-BoldExt', sans-serif;
+  font-size: 30px !important;
+  font-family: 'TradeGothicLTStd-BoldExt', sans-serif !important;
   /* line-height: 0.5em; */
 }
 #mission {
@@ -209,8 +210,8 @@ margin-left: 11px;
   font-family: 'TradeGothicLTStd-Extended', sans-serif;
 } 
 h3 {
-  font-family: 'TradeGothicLTStd-boldExt', sans-serif;
   font-size: 22px;
+  font-family: 'TradeGothicLTStd-boldExt', sans-serif;
 }
 
 #cta {
@@ -262,38 +263,25 @@ h3 {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
-  .test:after {
+  .test,
+  .test2,
+  .test3
+  { position: relative; }
+
+  .test::after,
+  .test2::after,
+  .test3::after
+  {
     content: "";
-    border: 0.5em solid #BEE1D6;
-    height: 0px;
-    width: 400px;
+    border-top: 0.8em solid #BEE1D6;
+    height: 0;
     position: absolute;
-    margin-top: 2em;
-    top: 1em;
-    z-index: 0;
+    top: 1.4em;
+    z-index: 0;    
   }
-  .test2:after {
-    content: "";
-    border:0.5em solid #BEE1D6;
-    height: 0px;
-    width: 595px;
-    margin-left: -200px;
-    margin-top: 2em;
-    justify-items: start;
-    position: absolute;
-    z-index: 0;
-    overflow-x: hidden;
-  }  
-  .test3:after {
-    content: "";
-    border: 0.5em solid #BEE1D6;
-    height: 0px;
-    width: 400px;
-    position: absolute;
-    margin-top: 2em;
-    bottom: auto;
-    z-index: 0;
-  }
+  .test::after { width: 400px; }
+  .test2::after { width: 595px; right: 0; }  
+  .test3::after { width: 400px; }
   
   h2 {
     position: relative;
@@ -372,6 +360,7 @@ h3 {
 .wrapperMobile {
   display: none;
 }
+
 /*
 .morestuff{
   background-color: black;
@@ -391,8 +380,9 @@ h3 {
   background-color: black;
   font-family: 'TradeGothicLTStd-Extended', sans-serif;
   font-size: 20px;
-  line-height: 3em;
+  /* line-height: 3em; */
   height: 100px;
+  padding: 0 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,7 +444,7 @@ padding-bottom: 20px;
 
 @media only screen and (max-width: 825px){
 /*
-  #all-nav{
+#all-nav{
 justify-content: space-between;
 }
 
@@ -550,6 +540,11 @@ margin-right: 50px;
 .footerbottom, .work {
   overflow: hidden;
 }
+
+.test::after,
+.test2::after,
+.test3::after
+{ left: 0; }
 
 /*
 .morestuff {
